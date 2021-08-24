@@ -97,6 +97,17 @@ nav > a.lang {
   background-size: cover;
 }
 
+.solutions h1 {
+  color: #4c65e6;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.solutions h3 {
+  color: #4c65e6;
+  font-weight: 700;
+}
+
 /*  */
 
 .approach {

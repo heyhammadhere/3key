@@ -5,20 +5,6 @@ hamburger.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
 
-// gsap.set("#one", {
-//   x: -500,
-// });
-
-// gsap.to("#one", {
-//   scrollTrigger: {
-//     trigger: "#one",
-//     toggleActions: "restart pause reverse pause",
-//     markers: true,
-//   },
-//   x: 0,
-//   duration: 2,
-// });
-
 gsap.set("#one", {
   x: -250,
 });
