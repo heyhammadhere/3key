@@ -4,3 +4,49 @@ let navbarLinks = document.querySelector(".navbar-links");
 hamburger.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
+
+// gsap.set("#one", {
+//   x: -500,
+// });
+
+// gsap.to("#one", {
+//   scrollTrigger: {
+//     trigger: "#one",
+//     toggleActions: "restart pause reverse pause",
+//     markers: true,
+//   },
+//   x: 0,
+//   duration: 2,
+// });
+
+gsap.set("#one", {
+  x: -250,
+});
+
+gsap.set("#two", {
+  x: -250,
+});
+
+gsap.set("#three", {
+  x: -250,
+});
+
+gsap
+  .timeline({
+    scrollTrigger: {
+      trigger: ".col-8",
+      toggleActions: "restart restart restart restart",
+    },
+  })
+  .to("#one", {
+    x: 0,
+    opacity: 1,
+  })
+  .to("#two", {
+    x: 0,
+    opacity: 1,
+  })
+  .to("#three", {
+    x: 0,
+    opacity: 1,
+  });
