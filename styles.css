@@ -108,6 +108,11 @@ nav > a.lang {
   font-weight: 700;
 }
 
+.solutions h4 {
+  color: #4c65e6;
+  font-weight: 700;
+}
+
 /*  */
 
 .approach {
@@ -130,18 +135,6 @@ nav > a.lang {
 }
 
 /*  */
-
-#one {
-  opacity: 0;
-}
-
-#two {
-  opacity: 0;
-}
-
-#three {
-  opacity: 0;
-}
 
 /*  */
 
