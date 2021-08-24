@@ -1,8 +1,15 @@
 let hamburger = document.querySelector(".hamburger");
 let navbarLinks = document.querySelector(".navbar-links");
+let links = document.querySelectorAll(".navbar-links a");
 
 hamburger.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
+});
+
+links.forEach((_) => {
+  _.addEventListener("click", () => {
+    navbarLinks.classList.toggle("active");
+  });
 });
 
 gsap.set("#solutions h1", {
@@ -107,5 +114,35 @@ gsap.to("#lower", {
   },
   x: 0,
   opacity: 1,
+  duration: 1,
+});
+
+gsap.from("#approach h4", {
+  scrollTrigger: {
+    trigger: "#approach h4",
+    toggleActions: "restart reverse restart reverse",
+  },
+  x: -100,
+  opacity: 0,
+  stagger: 0.25,
+});
+
+gsap.from("#approach h3", {
+  scrollTrigger: {
+    trigger: "#approach h3",
+    toggleActions: "restart reverse restart reverse",
+  },
+  y: -100,
+  opacity: 0,
+  duration: 1,
+});
+
+gsap.from("#approach p", {
+  scrollTrigger: {
+    trigger: "#approach p",
+    toggleActions: "restart reverse restart reverse",
+  },
+  x: 100,
+  opacity: 0,
   duration: 1,
 });
