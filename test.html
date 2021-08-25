@@ -7,33 +7,66 @@
     <title>Test</title>
     <style>
       * {
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
         box-sizing: border-box;
       }
       body {
-        background-color: #222;
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
       }
-      a {
-        display: inline-block;
-        padding: 15px 30px;
-        color: #2196f3;
-        text-decoration: none;
+      div {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border: 2.5px solid black;
       }
-      a:hover {
-        color: #255784;
-        background-color: #4c65e6;
-        box-shadow: 0 0 10px #4c65e6, 0 0 40px #4c65e6, 0 0 80px #4c65e6;
+      span:nth-child(1) {
+        position: absolute;
+        bottom: 0%;
+        left: -5%;
+        width: 110%;
+        height: 110%;
+        border: 2.5px solid black;
+        border-bottom: none;
+      }
+      span:nth-child(2) {
+        position: absolute;
+        bottom: 0%;
+        left: -10%;
+        width: 120%;
+        height: 120%;
+        border: 2.5px solid black;
+        border-bottom: none;
+      }
+      span:nth-child(3) {
+        position: absolute;
+        bottom: 0%;
+        left: -15%;
+        width: 130%;
+        height: 130%;
+        border: 2.5px solid black;
+        border-bottom: none;
+      }
+      span:nth-child(4) {
+        position: absolute;
+        bottom: 0%;
+        left: -20%;
+        width: 140%;
+        height: 140%;
+        border: 2.5px solid black;
+        border-bottom: none;
       }
     </style>
   </head>
   <body>
-    <a href="">
+    <div>
       <span></span>
       <span></span>
       <span></span>
       <span></span>
-      NEON
-    </a>
+    </div>
   </body>
 </html>
