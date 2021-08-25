@@ -59,7 +59,7 @@ nav > ul.navbar-links {
 }
 
 nav > ul.navbar-links > li {
-  padding: 0vh 1vw;
+  /* padding: 0vh 1vw; */
 }
 
 nav > ul.navbar-links > li > a {
@@ -67,10 +67,15 @@ nav > ul.navbar-links > li > a {
   font-size: large;
   font-weight: 700;
   color: #4c65e6;
+  padding: 0vh 1vw;
 }
 
 nav > ul.navbar-links > li > a:hover {
-  color: #6c83f7;
+  color: #0b0f18;
+  background-color: #4c65e6;
+  box-shadow: 0 0 10px #4c66e6da, 0 0 40px #4c66e6da, 0 0 80px #4c66e6da;
+  padding: 1vh 1vw;
+  border-radius: 4px;
 }
 
 nav > a.lang {
@@ -133,6 +138,14 @@ nav > a.lang {
   padding: 0.25rem;
   border: 2.5px solid #4c65e6;
   border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.approach h4:hover {
+  color: #0b0f18;
+  background-color: #4c65e6;
+  box-shadow: 0 0 10px #4c66e6da, 0 0 40px #4c66e6da, 0 0 80px #4c66e6da;
 }
 
 .approach h3 {
