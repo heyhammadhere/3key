@@ -1,277 +1,103 @@
 * {
   margin: 0px;
   padding: 0px;
-  box-sizing: border-box;
-}
-
-html {
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 body {
   color: #fff;
   background-color: #222;
-  font-family: "Courier New", Courier, monospace;
-  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 14px;
 }
 
-.py {
-  padding: 10vh 0vw;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
 }
 
-.border-rounded {
-  border: 2.5px solid #4c65e6;
-  border-radius: 10px;
-}
-
-.bg-gray {
-  background-color: #2b2828;
-  border-radius: 10px;
-  height: 100%;
-}
-
-.display-4 {
-  font-size: 2.5rem;
-}
-
-nav {
-  background-color: #0d1019b2;
-  position: fixed;
-  width: 100vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1vh 0vw;
-  z-index: 99;
-}
-
-nav > div.hamburger {
-  display: none;
-  cursor: pointer;
-  z-index: 100;
-}
-
-nav > a.logo > img {
-  width: 2.5rem;
-}
-
-nav > ul.navbar-links {
+ul,
+li {
   list-style: none;
-  margin: 0px;
-  display: flex;
-  flex-direction: row;
 }
 
-nav > ul.navbar-links > li > a {
+a,
+a:hover {
   text-decoration: none;
-  font-size: large;
-  font-weight: 700;
-  color: #4c65e6;
-  padding: 0vh 1vw;
 }
 
-nav > ul.navbar-links > li > a:hover {
-  color: #0b0f18;
-  background-color: #4c65e6;
-  box-shadow: 0 0 10px #4c66e6da, 0 0 40px #4c66e6da, 0 0 80px #4c66e6da;
-  padding: 1vh 1vw;
-  border-radius: 4px;
+button,
+button:hover {
+  border: none;
+  outline: none;
 }
 
-nav > a.lang {
-  text-decoration: none;
-  font-size: large;
-  font-weight: 700;
-  color: #4c65e6;
-  padding: 1rem;
-  border: 1px solid #4c65e6;
-  border-radius: 4px;
-}
+/* Custom Classes Starts */
 
-/*  */
-
-.home {
-  background: url("images/bg-01.png") no-repeat center;
-  background-size: cover;
-  height: 100vh;
-}
-
-/*  */
-
-.solutions {
-  background: url("images/bg-02.png") no-repeat center;
-  background-size: cover;
-}
-
-.solutions h1 {
-  color: #4c65e6;
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.solutions h3 {
-  color: #4c65e6;
-  font-weight: 700;
-}
-
-.solutions h4 {
-  color: #4c65e6;
-  font-weight: 700;
-}
-
-/*  */
-
-.approach {
-  background: url("images/bg-02.png") no-repeat center;
-  background-size: cover;
-}
-
-.approach .row {
+.bg-dark {
   min-height: 100vh;
-}
-
-.approach h4 {
-  color: #4c65e6;
-  font-weight: 700;
-  text-align: center;
-  margin: 1rem;
-  padding: 0.25rem;
-  border: 2.5px solid #4c65e6;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 0.25s;
-}
-
-.approach h4:hover {
-  color: #0b0f18;
-  background-color: #4c65e6;
-  box-shadow: 0 0 10px #4c66e6da, 0 0 40px #4c66e6da, 0 0 80px #4c66e6da;
-}
-
-.approach h3 {
-  color: #4c65e6;
-  font-weight: 700;
-}
-
-/*  */
-
-.performances {
-  background: url("images/bg-02.png") no-repeat center;
+  background: url("images/bg-dark.png") no-repeat center;
   background-size: cover;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-.performances h1 {
-  color: #4c65e6;
-  font-size: 2.5rem;
-  font-weight: 700;
-  text-align: right;
-}
-
-.performances h2 {
-  color: #4c65e6;
-  font-weight: 700;
-}
-
-#returns {
-  position: relative;
-}
-
-#returns > span {
-  position: absolute;
-  border-bottom: none;
-  border-radius: 4px;
-}
-
-.outline:nth-child(1) {
-  bottom: 0%;
-  left: -5%;
-  width: 110%;
-  height: 110%;
-  border: 4px solid #4c65e6;
-}
-.outline:nth-child(2) {
-  bottom: 0%;
-  left: -10%;
-  width: 120%;
-  height: 120%;
-  border: 4px solid #a915ff;
-}
-.outline:nth-child(3) {
-  bottom: 0%;
-  left: -15%;
-  width: 130%;
-  height: 130%;
-  border: 4px solid #4c65e6;
-}
-.outline:nth-child(4) {
-  bottom: 0%;
-  left: -20%;
-  width: 140%;
-  height: 140%;
-  border: 4px solid #a915ff;
-}
-
-/*  */
-
-.contact {
-  background: url("images/bg-02.png") no-repeat center;
+.bg-colorful {
+  min-height: 100vh;
+  background: url("images/bg-colorful.png") no-repeat center;
   background-size: cover;
+  display: grid;
+  grid-template-columns: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-/*  */
+/* Custom Classes Ends */
 
-/*  */
+/* Nav Starts */
 
-@media screen and (max-width: 768px) {
-  /*  */
-  nav {
-    background-color: #0d1019b2;
-  }
-  nav > ul.navbar-links {
-    position: fixed;
-    top: 0;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    clip-path: circle(0px at 0% 0%);
-    -webkit-clip-path: circle(0px at 0% 0%);
-    transition: all 1s ease;
-  }
-  nav > ul.navbar-links.active {
-    clip-path: circle(1000px at 75% 75%);
-    -webkit-clip-path: circle(1000px at 75% 75%);
-  }
-  nav > div.hamburger {
-    display: flex;
-    flex-direction: column;
-    width: 35px;
-    height: 35px;
-    justify-content: space-around;
-    align-items: center;
-  }
-  nav > div.hamburger > span {
-    background-color: #4c65e6;
-    width: 100%;
-    height: 4px;
-    border-radius: 4px;
-  }
-  /*  */
-  .solutions h1 {
-    text-align: center;
-  }
-  /*  */
-  .performances h1 {
-    text-align: center;
-  }
-  #returns > span {
-    display: none;
-  }
-  /*  */
+#nav {
 }
 
-/*  */
+/* Nav Ends */
+
+/* Home Starts */
+
+#home {
+}
+
+/* Home Ends */
+
+/* Solutions Starts */
+
+#solutions {
+}
+
+/* Solutions Ends */
+
+/* Approach Starts */
+
+#approach {
+}
+
+/* Approach Ends */
+
+/* Performances Starts */
+
+#performances {
+}
+
+/* Performances Ends */
+
+/* Contact Starts */
+
+#contact {
+}
+
+/* Contact Ends */
