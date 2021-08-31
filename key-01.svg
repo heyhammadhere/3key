@@ -1,0 +1,303 @@
+<svg
+        id="cf477854-e86b-4b0e-855d-72c322f40722"
+        data-name="4974bb45-bbae-4ae6-8e6e-014c0a7964ed"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 0 1366 768"
+      >
+        <defs>
+          <clipPath id="368fcc8c-8fe4-4847-af5e-6a454ee5312a">
+            <polygon
+              points="335.2 396.7 335.2 349.4 371.3 349.4 371.3 355.9 347 355.9 347 369.1 367.1 369.1 367.1 375.6 347 375.6 347 390 373.1 390 373.1 396.7 335.2 396.7"
+              style="fill: none"
+            />
+          </clipPath>
+          <linearGradient
+            id="f6408817-6180-474c-a691-a1f317797aaf"
+            x1="1.02"
+            y1="769.08"
+            x2="2.02"
+            y2="769.08"
+            gradientTransform="matrix(0, -47.23, -47.23, 0, 36677.67, 444.89)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#5345a0" />
+            <stop offset="0.28" stop-color="#5146a3" />
+            <stop offset="0.47" stop-color="#4b4bac" />
+            <stop offset="0.64" stop-color="#4153bb" />
+            <stop offset="0.79" stop-color="#335ed1" />
+            <stop offset="0.92" stop-color="#216ced" />
+            <stop offset="1" stop-color="#1576ff" />
+          </linearGradient>
+          <linearGradient
+            id="53a0689e-f5aa-4723-90bf-467d7827b940"
+            x1="1.01"
+            y1="769.01"
+            x2="2.01"
+            y2="769.01"
+            gradientTransform="matrix(0, -117, -117, 0, 90941.5, 433.5)"
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0" stop-color="#9200e9" />
+            <stop offset="1" stop-color="#0fb2ee" />
+          </linearGradient>
+          <clipPath id="32de6018-5768-4a14-9f10-f2ee5b3fe7d0">
+            <rect
+              x="770"
+              y="199.6"
+              width="395"
+              height="114.8"
+              style="fill: none"
+            />
+          </clipPath>
+          <clipPath id="19cec07f-8e52-48c9-a942-babf848e987d">
+            <rect
+              x="770.5"
+              y="329.1"
+              width="395"
+              height="114.8"
+              style="fill: none"
+            />
+          </clipPath>
+          <clipPath id="51e37367-1434-44db-b853-8d831dfc8db8">
+            <rect
+              x="770.5"
+              y="459.1"
+              width="395"
+              height="114.8"
+              style="fill: none"
+            />
+          </clipPath>
+          <linearGradient
+            id="51617656-ac0c-4400-b757-1d6c290fc0d7"
+            x1="1.01"
+            y1="769.01"
+            x2="2.01"
+            y2="769.01"
+            gradientTransform="matrix(0, -117, -117, 0, 90942, 563)"
+            xlink:href="#53a0689e-f5aa-4723-90bf-467d7827b940"
+          />
+          <linearGradient
+            id="2e8618e3-e81f-4f8a-88d4-e8efde4469b9"
+            x1="1.01"
+            y1="769.01"
+            x2="2.01"
+            y2="769.01"
+            gradientTransform="matrix(0, -117, -117, 0, 90942, 693)"
+            xlink:href="#53a0689e-f5aa-4723-90bf-467d7827b940"
+          />
+        </defs>        
+        <polyline
+          points="328.1 0 328.1 165 361.1 165"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <text
+          transform="translate(329.2 310.04) scale(1.19 1)"
+          style="
+            isolation: isolate;
+            font-size: 60px;
+            fill: #2f7fc9;
+            font-family: LucidaSans-Demi, Lucida Sans;
+            font-weight: 700;
+          "
+        >
+          K
+        </text>
+        <g style="clip-path: url(#368fcc8c-8fe4-4847-af5e-6a454ee5312a)">
+          <rect
+            x="335.2"
+            y="349.4"
+            width="37.9"
+            height="47.2"
+            style="fill: url(#f6408817-6180-474c-a691-a1f317797aaf)"
+          />
+        </g>
+        <text
+          transform="translate(328.2 471.04) scale(1.19 1)"
+          style="
+            isolation: isolate;
+            font-size: 60px;
+            fill: #53298e;
+            font-family: LucidaSans-Demi, Lucida Sans;
+            font-weight: 700;
+          "
+        >
+          Y
+        </text>
+        <polyline
+          points="671 306.8 702.7 306.8 705.9 297.2 770 297.2"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <line
+          x1="707"
+          y1="389.5"
+          x2="771"
+          y2="389.5"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <polyline
+          points="695 473.2 719.3 473.2 722.4 481.8 771 481.8"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <path
+          d="M1164.8,315H770.2a2.22,2.22,0,0,1-2.2-2.2h0V201.2a2.22,2.22,0,0,1,2.2-2.2h394.6a2.22,2.22,0,0,1,2.2,2.2V312.8a2.22,2.22,0,0,1-2.2,2.2h0a2.22,2.22,0,0,0,2.2-2.2V201.2a2.22,2.22,0,0,0-2.2-2.2H770.2a2.22,2.22,0,0,0-2.2,2.2h0V312.8a2.22,2.22,0,0,0,2.2,2.2h394.6Z"
+          style="fill: url(#53a0689e-f5aa-4723-90bf-467d7827b940)"
+        />
+        <g style="clip-path: url(#32de6018-5768-4a14-9f10-f2ee5b3fe7d0)">
+          <path
+            d="M1162.8,314.4H772.2a2.22,2.22,0,0,1-2.2-2.2h0V201.8a2.22,2.22,0,0,1,2.2-2.2h390.6a2.22,2.22,0,0,1,2.2,2.2V312.3a2.2,2.2,0,0,1-2.2,2.1"
+            style="fill: #3a3e49"
+          />
+        </g>
+        <g style="clip-path: url(#19cec07f-8e52-48c9-a942-babf848e987d)">
+          <path
+            d="M1163.3,443.9H772.7a2.22,2.22,0,0,1-2.2-2.2h0V331.3a2.22,2.22,0,0,1,2.2-2.2h390.6a2.22,2.22,0,0,1,2.2,2.2V441.8a2.2,2.2,0,0,1-2.2,2.1"
+            style="fill: #3a3e49"
+          />
+        </g>
+        <g style="clip-path: url(#51e37367-1434-44db-b853-8d831dfc8db8)">
+          <path
+            d="M1163.3,573.9H772.7a2.22,2.22,0,0,1-2.2-2.2h0V461.3a2.22,2.22,0,0,1,2.2-2.2h390.6a2.22,2.22,0,0,1,2.2,2.2V571.8a2.2,2.2,0,0,1-2.2,2.1"
+            style="fill: #3a3e49"
+          />
+        </g>
+        <path
+          d="M1165.3,444.5H770.7a2.22,2.22,0,0,1-2.2-2.2h0V330.7a2.22,2.22,0,0,1,2.2-2.2h394.6a2.22,2.22,0,0,1,2.2,2.2V442.3a2.22,2.22,0,0,1-2.2,2.2h0a2.22,2.22,0,0,0,2.2-2.2V330.7a2.22,2.22,0,0,0-2.2-2.2H770.7a2.22,2.22,0,0,0-2.2,2.2h0V442.3a2.22,2.22,0,0,0,2.2,2.2h394.6Z"
+          style="fill: url(#51617656-ac0c-4400-b757-1d6c290fc0d7)"
+        />
+        <path
+          d="M1165.3,574.5H770.7a2.22,2.22,0,0,1-2.2-2.2h0V460.7a2.22,2.22,0,0,1,2.2-2.2h394.6a2.22,2.22,0,0,1,2.2,2.2V572.3a2.22,2.22,0,0,1-2.2,2.2h0a2.22,2.22,0,0,0,2.2-2.2V460.7a2.22,2.22,0,0,0-2.2-2.2H770.7a2.22,2.22,0,0,0-2.2,2.2h0V572.3a2.22,2.22,0,0,0,2.2,2.2h394.6Z"
+          style="fill: url(#2e8618e3-e81f-4f8a-88d4-e8efde4469b9)"
+        />
+        <text
+          transform="translate(330 207)"
+          style="
+            isolation: isolate;
+            font-size: 36px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+            letter-spacing: 25px;
+          "
+        >
+          KEY
+        </text>
+        <text
+          transform="translate(395 308)"
+          style="
+            isolation: isolate;
+            font-size: 22px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+            letter-spacing: 5px;
+          "
+        >
+          NOWLEDGE BASED
+        </text>
+        <text
+          transform="translate(395 397)"
+          style="
+            isolation: isolate;
+            font-size: 22px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+            letter-spacing: 5px;
+          "
+        >
+          CONOMIES OF SCALE
+        </text>
+        <text
+          transform="translate(395 472)"
+          style="
+            isolation: isolate;
+            font-size: 22px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+            letter-spacing: 5px;
+          "
+        >
+          IELD AGGREGATORS
+        </text>
+        <text
+          transform="translate(875 184)"
+          style="
+            isolation: isolate;
+            font-size: 14px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          "
+        >
+          3KEY ADVANTAGES
+        </text>
+        <text
+          transform="translate(785 230)"
+          style="
+            isolation: isolate;
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+          "
+        >
+          <tspan x="0">AT 3KEY, WE AIM TO CAPTURE THE</tspan>
+          <tspan x="0" dy="20px">KNOWLEDGE OF HUMAN EXPERTS AND</tspan>
+          <tspan x="0" dy="20px">DATA ANALYTICS TO SUPPORT</tspan>
+          <tspan x="0" dy="20px">DECISION MAKING</tspan>
+        </text>
+        <text
+          transform="translate(785 365)"
+          style="
+            isolation: isolate;
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+          "
+        >
+          <tspan x="0">WE HAVE A SIGNIFICANT EDGE IN</tspan>
+          <tspan x="0" dy="20px">REDUCING COST PER UNIT OF</tspan>
+          <tspan x="0" dy="20px">PRODUCTION BY ACHIEVING</tspan>
+          <tspan x="0" dy="20px">ECONOMIES OF SCALE</tspan>
+        </text>
+        <text
+          transform="translate(785 480)"
+          style="
+            isolation: isolate;
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+          "
+        >
+        <tspan x="0">
+          PROFIT RETURN VARY GREATLY ACROSS
+          </tspan>
+          <tspan x="0" dy="20px">DIFFERENT LEADING PLATFORMS. 3KEY</tspan>
+          <tspan x="0" dy="20px">USES YIELD AGGREGATION TO HELP</tspan>
+          <tspan x="0" dy="20px">CLIENTS ACHIEVE THE HIGHEST YIELDS,</tspan>
+          <tspan x="0" dy="20px">MAXIMIZING THEIR RETURNS</tspan>
+          <tspan x="0" dy="20px"></tspan>
+          <tspan x="0" dy="20px"></tspan>
+        </text>
+      </svg>

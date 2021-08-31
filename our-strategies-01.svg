@@ -1,0 +1,125 @@
+<svg
+        id="fb2cbc4a-d134-488c-90d9-88cc606ba003"
+        data-name="Layer 1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1366 768"
+      >
+        <polyline
+          points="957.55 0 957.55 127.86 778.71 127.86 687.16 219.41 311.38 219.41"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <polyline
+          points="544.51 219.41 544.51 316.28 639.26 409.96 639.26 768"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <rect
+          x="232.82"
+          y="253.44"
+          width="277.9"
+          height="53.8"
+          rx="5.6"
+          ry="5.6"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <rect
+          x="232.82"
+          y="319.94"
+          width="277.9"
+          height="53.8"
+          rx="5.6"
+          ry="5.6"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <rect
+          x="232.82"
+          y="386.44"
+          width="277.9"
+          height="53.8"
+          rx="5.6"
+          ry="5.6"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <text
+          transform="translate(310 286.01)"
+          style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial"
+        >
+          SEED FUNDING
+        </text>
+        <text
+          transform="translate(270 352.51)"
+          style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial"
+        >
+          BORROWNIG / LENDING
+        </text>
+        <text
+          transform="translate(250 419.01)"
+          style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial"
+        >
+          LEVERAGE YIELD-FARMING
+        </text>
+        <text
+          transform="translate(667.87 704.01) rotate(-90)"
+          style="
+            font-size: 22px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+            letter-spacing: 5px;
+          "
+        >
+          FLOW OF VALUE
+        </text>
+        <text
+          transform="translate(870 350)"
+          style="
+            font-size: 36px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          "
+        >
+          OUR STRATEGIES
+        </text>
+        <text
+          transform="translate(800 400)"
+          style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial"
+        >
+          <tspan x="0">WE BELIEVE THAT DEFI WILL SUPERSEDE TRADITIONAL</tspan>
+          <tspan x="0" dy="20px">FINANCE WITHIN THE NEXT DECADE</tspan>
+          <tspan x="0" dy="50px">
+            AT 3KEY, WE CAN TACKLE LONG-STANDING PROBLEMS
+          </tspan>
+          <tspan x="0" dy="20px">
+            AND ADDRESSING INEFFICIENCIES IN THE CURRENT
+          </tspan>
+          <tspan x="0" dy="20px">
+            FINANCIAL SYSTEM: IMPROVING FINAL INCLUSION,
+          </tspan>
+          <tspan x="0" dy="20px">INCREASING LIQUIDITY AND REDUCING COST</tspan>
+        </text>
+      </svg>

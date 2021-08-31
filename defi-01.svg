@@ -1,0 +1,63 @@
+<svg
+        id="70c63e00-e5d7-457f-a69a-67015b4b79e5"
+        data-name="88cec318-1ccc-47c6-a4f5-90df2f2c28d3"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 1366 768"
+      >
+        <path
+          d="M328.17,0V169.4l906.7-.4V637.4H138.37v-21l-.2-358.6V209.5h190l855.8-.1V589.6h0l-985,.7-.3-266.1V250.8h0l910.4-.7h0V530h0l-855.5,1.1-1.3-241.3,244.1-.3"
+          style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          "
+        />
+        <text
+          transform="translate(345 400)"
+          style="
+            isolation: isolate;
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+          "
+        >
+          <tspan x="0">
+            AT 3KEY TECHNOLOGIES, WE PROVIDE A 1-CLICK METHOD FOR CLIENTS TO
+          </tspan>
+          <tspan x="30" dy="20PX">
+            PARTICIPATE IN A BROAD BASE OF COMPLEX DEFI INSTRUMENTS
+          </tspan>
+          <tspan x="-30" dy="40PX">
+            OUR PROPRIETARY KEY SYSTEM IS AN ACTIVELY MANAGED SYSTEM THAT ALLOWS
+          </tspan>
+          <tspan x="0" dy="20PX">
+            SHARE-HOLDERS TO PARTICIPATE IN COMPLEX DEFI INSTRUMENTS WITH A
+          </tspan>
+          <tspan x="250" dy="20PX">CLICK OF A BUTTON</tspan>
+        </text>
+        <text
+          transform="translate(417.66 327.02) scale(1.14 1)"
+          style="
+            isolation: isolate;
+            font-size: 36px;
+            fill: #4488d8;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          "
+        >
+          DEFI AND YIELD FARMING
+        </text>
+        <text
+          transform="translate(369.48 365.02) scale(1.14 1)"
+          style="
+            isolation: isolate;
+            font-size: 36px;
+            fill: #7442a5;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          "
+        >
+          ARE THE FUTURE OF FINANCE
+        </text>
+      </svg>
