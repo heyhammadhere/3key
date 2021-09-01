@@ -1,0 +1,98 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  scroll-behavior: smooth;
+}
+
+nav {
+  position: fixed;
+  top: 0%;
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+nav > a:nth-child(1) {
+  z-index: 9;
+}
+
+nav > a:nth-child(1) > span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+nav > a:nth-child(2) > img {
+  width: 30px;
+}
+
+nav > a:nth-child(3) {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+nav > ul {
+  position: fixed;
+  top: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+  clip-path: circle(5vw at -5% -5%);
+  background-color: black;
+  transition: all 0.5s;
+}
+
+nav > ul.open {
+  clip-path: circle(150vw);
+}
+
+nav > ul > li > a {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: #fff;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+}
+
+.bg-dark {
+  background: url("images/bg-dark.png") no-repeat center;
+  background-size: cover;
+}
+
+.bg-colorful {
+  background: url("images/bg-colorful.png") no-repeat center;
+  background-size: cover;
+}
+
+svg {
+  width: auto;
+  height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+  nav > ul > li > a {
+    font-size: 18px;
+  }
+}
