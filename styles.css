@@ -6,6 +6,37 @@
   scroll-behavior: smooth;
 }
 
+body {
+  color: #fff;
+  background-color: #222;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button,
+button:hover {
+  border: none;
+  outline: none;
+}
+
 nav {
   position: fixed;
   top: 0%;
@@ -19,31 +50,59 @@ nav {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-nav > a:nth-child(1) {
+nav > button:nth-child(1) {
+  background: transparent;
+  cursor: pointer;
   z-index: 9;
 }
 
-nav > a:nth-child(1) > span {
+nav > button:nth-child(1) > span {
   display: block;
   width: 35px;
   height: 5px;
   margin: 5px;
   border-radius: 4px;
-  background-color: #fff;
+  background: -webkit-linear-gradient(#0695c9, #910acf);
+  background: -o-linear-gradient(#0695c9, #910acf);
+  background: -moz-linear-gradient(#0695c9, #910acf);
+  background: linear-gradient(#0695c9, #910acf);
 }
 
 nav > a:nth-child(2) > img {
   width: 30px;
 }
 
-nav > a:nth-child(3) {
+nav > div:nth-child(3) {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+nav > div:nth-child(3) > a {
   text-decoration: none;
   font-size: 18px;
   font-weight: bold;
-  border: 1px solid #c1c1c1;
-  border-radius: 4px;
-  padding: 5px 10px;
+  border: 3px solid #910acf;
+  border-radius: 25px;
+  margin-right: 7.5px;
+  padding: 7.5px 15px;
   color: #fff;
+}
+
+nav > div:nth-child(3) > button {
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid #c1c1c141;
+  border-radius: 4px;
+  padding: 7.5px 15px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.048);
+  /* background: -webkit-linear-gradient(#0695c9, #910acf);
+  background: -o-linear-gradient(#0695c9, #910acf);
+  background: -moz-linear-gradient(#0695c9, #910acf);
+  background: linear-gradient(#0695c9, #910acf); */
+  cursor: pointer;
 }
 
 nav > ul {
