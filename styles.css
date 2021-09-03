@@ -101,7 +101,7 @@ nav > div:nth-child(3) > button {
   border-radius: 4px;
   padding: 7.5px 15px;
   color: #fff;
-  background: rgba(255, 255, 255, 0.048);  
+  background: rgba(255, 255, 255, 0.048);
   cursor: pointer;
 }
 
@@ -153,6 +153,33 @@ div {
 
 /*  */
 
+#performance-trail,
+#solution-trail,
+#approach-trail {
+  stroke-width: 2px;
+  stroke: url(#trail-light);
+  stroke-opacity: 1;
+  fill-opacity: 0;
+}
+
+#home-perf,
+#home-sol,
+#home-appr {
+  font-size: 36px;
+  fill: #910acf;
+  font-family: Arial-BoldMT, Arial;
+  font-weight: 700;
+  filter: drop-shadow(0 0 1.5rem #910acf);
+}
+
+.perf,
+.sol,
+.appr {
+  stroke-miterlimit: 10;
+  stroke-width: 2px;
+  filter: drop-shadow(0 0 1.5rem #0695c9);
+}
+
 .circle-indicator {
   filter: drop-shadow(0 0 40px #0695c9);
 }
@@ -177,7 +204,7 @@ div {
 
 @keyframes dash2 {
   to {
-      stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
   }
 }
 
