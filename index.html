@@ -83,27 +83,74 @@
           <stop offset="0.78" stop-color="#8120d4" />
           <stop offset="1" stop-color="#831dd3" />
         </linearGradient>
+        <linearGradient id="trail-light" gradientTransform=" rotate(90)">
+          <stop offset="0%" style="stop-color: #0695c9; stop-opacity: 1.0" />
+          <stop offset="50%" style="stop-color: #906; stop-opacity: 0.3" />
+          <stop offset="100%" style="stop-color: #906; stop-opacity: 0.0" />
+        </linearGradient>
       </defs>
+      <g>
+        <path id="performance-trail" class="glowing draw-back" d="M317 347, 50 347, 50 450, 269.229 600, 269.229 700"
+          style="
+stroke-width: 2px;
+stroke: url(#trail-light);
+stroke-opacity:1;
+fill-opacity:0;
+">
+        </path>
+        <circle class="circle-indicator display-none" id="performance-circle" cx="317" cy="347" r="20" stroke="black"
+          stroke-width="3" fill="#18acf6">
+        </circle>
+      </g>
+
+      <g>
+        <path id="solution-trail" class="glowing draw-back" d="M585 120, 585 50, 1000 50, 1000 500, 500 700" style="
+stroke-width: 2px;
+stroke: url(#trail-light);
+stroke-opacity:1;
+fill-opacity:0;
+">
+        </path>
+        <circle class="circle-indicator display-none" id="solution-circle" cx="585" cy="120" r="20" stroke="black"
+          stroke-width="3" fill="#0695c9">
+        </circle>
+      </g>
+
+      <g>
+        <path id="approach-trail" class="glowing draw-back" d="M645 345, 645 300, 1000 300, 1000 500, 500 700" style="
+stroke-width: 2px;
+stroke: url(#trail-light);
+stroke-opacity:1;
+fill-opacity:0;
+">
+        </path>
+        <circle class="circle-indicator display-none" id="approach-circle" cx="645" cy="345" r="20" stroke="black"
+          stroke-width="3" fill="#18acf6">
+        </circle>
+      </g>
       <path class="sol"
         d="M631,197.86c-5.4,9.4-10.3,17.9-15.3,26.5l-16.8,29.1q-42.45,73.5-85,147c-4.5,7.8-9.1,15.5-13.5,23.4-1.3,2.4-2.3,2.6-4.6,1.2a62.44,62.44,0,0,0-34.3-8.8c-17.8.6-35.7,0-53.4,0-1.1-1.3,0-2.1.5-2.8q33.15-57.3,66.2-114.6,45.45-78.75,90.9-157.4a6.24,6.24,0,0,0,0-6.7,25.6,25.6,0,0,1,9-33.2,25.11,25.11,0,0,1,33.3,5.1,24.28,24.28,0,0,1,3.9,26.7,23.61,23.61,0,0,1-21.7,15.2,7.08,7.08,0,0,0-6.7,4.3c-7.7,13.8-15.6,27.4-23.6,41-1.8,3.2-1.3,3.8,2.2,3.8h63.2Zm-32.8-74.5a9.75,9.75,0,1,0-19.5-.3,9.9,9.9,0,0,0,9.6,10.1h.2a9.57,9.57,0,0,0,9.6-9.5c.12-.2.12-.2.12-.3Z"
         style="
             stroke-miterlimit: 10;
             stroke-width: 2px;
             stroke: url(#12973c37-2682-437b-a7ae-6c71aa224b4a);
+            filter: drop-shadow(0 0 0.5rem #0695c9);
           " />
-      <path class="perf"
+      <path id="perf" class="perf"
         d="M450.12,197.86h54.8c3.6,0,3.8.8,2.1,3.8-14,23.9-28.3,47.8-41.4,71.8-4,7.3-8.3,9.2-16.2,9.1-26.2-.5-52.3,0-78.5-.3a5.39,5.39,0,0,0-5.6,3.2q-12,21.6-24.6,42.8a5.74,5.74,0,0,0,0,6.4,24.44,24.44,0,0,1-2.2,26.9,23.54,23.54,0,0,1-25.7,9.9,24.44,24.44,0,0,1-19.6-19.1,25.48,25.48,0,0,1,18.9-30.6,27.24,27.24,0,0,1,5-.7,5.39,5.39,0,0,0,5.4-3.2q33.45-58.2,67-116.4a6.44,6.44,0,0,1,6.6-3.7C414.12,198.06,432.12,197.86,450.12,197.86Zm-131.8,158.4a9.6,9.6,0,0,0,9.6-9.6h0a9.44,9.44,0,0,0-9.07-9.8h-.93a9.57,9.57,0,0,0-9.6,9.5v.4a9.52,9.52,0,0,0,9.64,9.4h0A.37.37,0,0,0,318.32,356.26Z"
         style="
             stroke-miterlimit: 10;
             stroke-width: 2px;
             stroke: url(#25151fbe-4aa0-49ea-b566-e0835cb7a6c7);
+            filter: drop-shadow(0 0 0.5rem #0695c9);
           " />
-      <path class="appr"
+      <path id="appr" class="appr"
         d="M673.72,336.26a26,26,0,0,0-33.6-14.7c-.2.1-.4.1-.5.2a25.5,25.5,0,0,0-13.5,33.4,11.94,11.94,0,0,0,.8,1.6,6.05,6.05,0,0,1-.2,6.7c-8.8,15.2-17.5,30.3-26.3,45.5-.6,1-.7,2.5-2.4,2.9l-2.6-4.1a163.32,163.32,0,0,0-35-39.6c-1.8-1.4-2.8-2.1-4.2.5-13.2,23-26.4,46.1-39.7,69-.7,1.2-1.1,2.1,0,3.4a82.59,82.59,0,0,1,21.6,53.6c-.3,3.8-.4,7.6-.8,11.3-4.1,39.6-42,72.3-81.7,71-37.1-1.3-68-24.6-77.3-61.6-.5-2.2-1.3-3.2-3.7-3.2h-78.1c-2.9,0-3.2,1-3,3.6a164.18,164.18,0,0,0,182.6,143.3c.5-.1,1.1-.1,1.6-.2A164.35,164.35,0,0,0,615,540.26a157.05,157.05,0,0,0,2.7-77.6c-11.8,20.7-23,40.3-34.1,59.9-.9.4-.9,1.9-2.2,1.9H558.1l8.2-14.8c.8-1.2,1.7-2.4,2.4-3.6q38.25-65.85,76-131.6a6.44,6.44,0,0,1,6.1-3.8,25.47,25.47,0,0,0,24.6-26.3A31.57,31.57,0,0,0,673.72,336.26Zm-23.9,18.9a9.53,9.53,0,0,1-9.8-9.23v-.87a9.94,9.94,0,0,1,9.6-9.6,9.82,9.82,0,0,1,9.4,10.2A10,10,0,0,1,649.82,355.16Z"
         style="
             stroke-miterlimit: 10;
             stroke-width: 2px;
             stroke: url(#e4bd02fc-5572-447f-9901-ca5330ec353a);
+            filter: drop-shadow(0 0 0.5rem #0695c9);
           " />
       <path class="perf"
         d="M367.62,198.26c-16.1,27.9-32,55.3-47.8,82.8-1.4-.5-.8-1.5-.8-2.3v-76.7c0-3.2.6-4.3,4-4.2,13.6.2,27.2,0,40.7,0C364.72,197.86,365.82,198.16,367.62,198.26Z"
@@ -111,21 +158,10 @@
             stroke-miterlimit: 10;
             stroke-width: 2px;
             stroke: url(#26f53fd5-22eb-4226-96e1-89c8ea8959d3);
+            filter: drop-shadow(0 0 0.5rem #0695c9);
           " />
-      <path
-        d="M570.46,144.1c-30.25,52.15-61,105.45-90.68,157-11,19.09-22.25,38.5-33.13,57.27-9.88,17-20.06,34.6-30.08,52l9.5.1c5.83.07,11.86.14,17.77.14,6.6,0,12.37-.09,17.64-.28h1.85A69.64,69.64,0,0,1,497,418.91c3.23-6.05,6.75-12.06,10.17-17.88.78-1.32,1.55-2.64,2.31-3.94l79.65-137.65,5.37-9.28,16.86-28.91c3.35-6,6.84-12,10.5-18.25H562c-1.77,0-5.92,0-7.91-3.52s.07-7,1-8.52c7.79-13.39,15.84-27.23,23.44-40.83a12.87,12.87,0,0,1,11.4-7,18.88,18.88,0,0,0,16.68-11.81l.06-.15.07-.15a18.84,18.84,0,0,0-2.9-20.75l-.11-.12-.11-.13a19.32,19.32,0,0,0-15.09-7.13,19.84,19.84,0,0,0-10.81,3.2h0a19.78,19.78,0,0,0-7.08,25.77A11.74,11.74,0,0,1,570.46,144.1Zm18.59-36.29a15.19,15.19,0,0,1,15,15.31v.14h0a15.18,15.18,0,0,1-15,15.17h-.64a15.66,15.66,0,0,1-14.69-15.62A15.19,15.19,0,0,1,589.05,107.81Z"
-        style="fill: url(#a31cb3ce-2f98-420c-b283-f0431618b739)" />
-      <path
-        d="M314,365.54h.33a19,19,0,0,0,4.74.61,17.63,17.63,0,0,0,15.07-8.09l.16-.25.18-.23A18.64,18.64,0,0,0,336.3,337a11.3,11.3,0,0,1,0-12c9.06-15.3,17-29.11,24.28-42.19a11,11,0,0,1,9.92-6.23,6.7,6.7,0,0,1,1,.05c5.29.07,10.88.09,17.57.09h31.78c11.63,0,20.58.09,29,.3,6.31,0,8.46-1.22,11.4-6.41,10.77-19.93,22.54-39.9,33.93-59.21q2.49-4.2,5-8.4H450.53c-6,0-12.16,0-18.08.07s-12,.07-18,.07c-6.76,0-12.71,0-18.17-.14h-.66a1.33,1.33,0,0,0-1.08.84l-.07.15-.08.14C372.13,242.6,349.52,282,327.65,320a10.64,10.64,0,0,1-9.6,6.2,6.7,6.7,0,0,1-1-.05,22.43,22.43,0,0,0-3.65.51,20,20,0,0,0-15,24v0h0A19.41,19.41,0,0,0,314,365.54Zm-11-19.46a14.84,14.84,0,0,1,14.68-15h1.59c8.49.5,14.77,7.27,14.38,15.46a14.85,14.85,0,0,1-14.86,14.84H318a15,15,0,0,1-15-15Z"
-        style="fill: url(#f5c0f4d6-fbc0-4e38-a716-840cd3eb51fc)" />
-      <path class="appr"
-        d="M650,325a20,20,0,0,0-6.81,1.17l-.06.06-1,.42a19.61,19.61,0,0,0-10.72,25.58h0l.18.42v.09a8.25,8.25,0,0,1,.87,2,11.27,11.27,0,0,1-1,11.61c-4.4,7.53-8.78,15.1-13,22.43s-8.76,15.1-13.22,22.74h0a.87.87,0,0,1-.07.17,7.79,7.79,0,0,1-5.78,5.25l-3.73.75-2-3.24-2.52-4.09a160.48,160.48,0,0,0-31.45-36.12c-12.87,22.56-25.45,44.36-37.43,64.88A88.73,88.73,0,0,1,544,494.44v.62c-.1,1.2-.17,2.4-.24,3.67a75,75,0,0,1-.74,8.06c-4.41,41.05-43.3,75.69-85,75.69H455.6c-40.18-1.37-72.36-26.67-82.27-64.56h-73.9a158.67,158.67,0,0,0,157,136.88,160.47,160.47,0,0,0,19.23-1.15H476l.32-.16.92-.11a158.25,158.25,0,0,0,132.68-114.7v-.06a151.46,151.46,0,0,0,5-60.11q-2.19,3.87-4.37,7.69c-7.63,13.42-14.83,26.09-22.16,38.85l-1,1.8-.61.2a6.56,6.56,0,0,1-5.32,2.64h-32.6l4.6-8.13,8.28-14.63.18-.31.21-.28q.63-.88,1.17-1.83c.25-.41.5-.84.78-1.27,25-43,50.81-87.53,75.89-131a12.33,12.33,0,0,1,10.84-6.77,19.41,19.41,0,0,0,13.83-6.21A19.75,19.75,0,0,0,670,344.77V344a13.29,13.29,0,0,0-1-6.13A20.34,20.34,0,0,0,650,325Zm14.92,20.32v.17a15.32,15.32,0,0,1-14.34,14.64h-.34a15.33,15.33,0,0,1-15.32-14.33v-1.64a15.69,15.69,0,0,1,14.66-14.64h.66a15.64,15.64,0,0,1,14.69,15.62Z"
-        style="fill: url(#717a9b28-6551-47be-bbdf-dcf550677076)" />
-      <path
-        d="M355.82,204.1l-7.45.06c-4.06,0-8.26.07-12.41.07s-7.83,0-11.26-.11v58.69c9.53-18.11,19.14-36.17,29.17-55.05Z"
-        style="fill: #318bee" />
       <a href="#e92100d8-9617-4749-88de-4c4514270e8a">
-        <text transform="translate(640 125)" class="sol" style="
+        <text id="home-sol" transform="translate(640 125)" class="sol" style="
               font-size: 36px;
               fill: #910acf;
               font-family: Arial-BoldMT, Arial;
@@ -135,7 +171,7 @@
         </text>
       </a>
       <a href="#c401dc5d-381a-4cb1-a1a7-39248e79f50c">
-        <text transform="translate(80 425)" style="
+        <text id="home-perf" transform="translate(50 425)" style="
               font-size: 36px;
               fill: #910acf;
               font-family: Arial-BoldMT, Arial;
@@ -145,7 +181,7 @@
         </text>
       </a>
       <a href="#d2bc031f-1026-4185-bc7a-ba2c732eec68">
-        <text transform="translate(700 345)" style="
+        <text id="home-appr" transform="translate(700 345)" style="
               font-size: 36px;
               fill: #910acf;
               font-family: Arial-BoldMT, Arial;
@@ -154,6 +190,305 @@
           APPROACH
         </text>
       </a>
+    </svg>
+  </div>
+  <!-- Performances Starts -->
+  <div id="performances-01" class="bg-dark">
+    <svg id="c401dc5d-381a-4cb1-a1a7-39248e79f50c" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1366 768">
+      <rect x="132.44" y="296.73" width="542.09" height="160.08" rx="6.79" ry="6.79" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <rect x="248.14" y="491.22" width="275.78" height="145.12" rx="6.79" ry="6.79" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <rect x="545.36" y="491.22" width="275.78" height="145.12" rx="6.79" ry="6.79" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <rect x="843.59" y="491.22" width="275.78" height="145.12" rx="6.79" ry="6.79" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <rect x="693.97" y="296.73" width="542.09" height="160.08" rx="6.79" ry="6.79" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <text transform="translate(249.72 201.46) rotate(0.31)" style="
+            font-size: 36px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          ">
+        PERFORMANCES
+      </text>
+      <text transform="translate(330 417.46) rotate(0.31)"
+        style="font-size: 60px; fill: #fff; font-family: ArialMT, Arial">
+        169%
+      </text>
+      <polyline points="240.16 218.43 612.19 218.43 702.45 128.17 881.49 128.17 881.49 0" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <text transform="translate(215 341.61)" style="
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        PAST 7 DAYS ESTIMATED APR
+      </text>
+      <text transform="translate(328.17 564.72) rotate(0.31)"
+        style="font-size: 48px; fill: #fff; font-family: ArialMT, Arial">
+        600%
+      </text>
+      <text transform="translate(268.58 595)" style="
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        <tspan x="55">AVERAGE</tspan>
+        <tspan x="40" dy="20px">ANNUAL ROI</tspan>
+      </text>
+      <text transform="translate(639.35 563.41) rotate(0.31)"
+        style="font-size: 48px; fill: #fff; font-family: ArialMT, Arial">
+        15+
+      </text>
+      <text transform="translate(590 595)" style="
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        <tspan x="25">PROJECTS</tspan>
+        <tspan x="0" dy="20px">PARTICIPATED</tspan>
+      </text>
+      <text transform="translate(919.62 563.41) rotate(0.31)"
+        style="font-size: 48px; fill: #fff; font-family: ArialMT, Arial">
+        100%
+      </text>
+      <text transform="translate(885 595)" style="
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        <tspan x="20">CUSTOMER</tspan>
+        <tspan x="0" dy="20px">SATISFACTION</tspan>
+      </text>
+      <text transform="translate(880 419.56) rotate(0.31)"
+        style="font-size: 60px; fill: #fff; font-family: ArialMT, Arial">
+        230%
+      </text>
+      <text transform="translate(775 341.61)" style="
+            font-size: 18px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        PAST 7 DAYS ESTIMATED APY
+      </text>
+      <line x1="683" y1="768" x2="683" y2="717.13" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+    </svg>
+  </div>
+  <div id="performances-02" class="bg-dark">
+    <svg id="08f2eb64-0059-4155-b3c7-88ffa258ab0f" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 1366 768">
+      <polyline points="240.16 218.43 612.19 218.43 702.45 128.17 881.49 128.17 881.49 0" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <line x1="683" y1="768" x2="683" y2="717.13" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <rect x="750" y="200" width="410" height="410" rx="5" ry="5" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <line x1="661.5" y1="360.5" x2="236.5" y2="360.5" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <rect x="236.5" y="415.5" width="425" height="46" rx="5" ry="5" style="
+            fill: none;
+            stroke: #0695c9;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+          " />
+      <text transform="translate(235.79 295.4)" style="
+            font-size: 14px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        FUND ALLOCATION ( USDT )
+      </text>
+      <text transform="translate(785 260)" style="
+            font-size: 26px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            letter-spacing: 5px;
+          ">
+        ESTIMATED RETURNS
+      </text>
+      <text transform="translate(865 303.4)" style="
+            font-size: 14px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        PORTFOLIO VALUE
+      </text>
+      <text transform="translate(865 410.4)" style="
+            font-size: 14px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        ESTIMATED YIELD
+      </text>
+      <text transform="translate(850 518.4)" style="
+            font-size: 14px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        ESTIMATED RETURNS
+      </text>
+      <text transform="translate(236.79 395.4)" style="
+            font-size: 14px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+          ">
+        PREFERRED DURATION
+      </text>
+      <text transform="translate(235.79 480.4)" style="
+            font-size: 14px;
+            fill: #0fb2ee;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          ">
+        *IN MONTHS
+      </text>
+      <text transform="translate(235.79 337.4)" style="
+            font-size: 26px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            letter-spacing: 5px;
+          ">
+        $10,000
+      </text>
+      <text transform="translate(250 200) rotate(0.31)" style="
+            font-size: 36px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          ">
+        CALCULATOR
+      </text>
+      <text transform="translate(277.26 450.26)" style="
+            font-size: 28px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            letter-spacing: 5px;
+          ">
+        3
+      </text>
+      <text transform="translate(385.26 450.26)" style="
+            font-size: 28px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            letter-spacing: 5px;
+          ">
+        6
+      </text>
+      <text transform="translate(490.27 450.26)" style="
+            font-size: 28px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            letter-spacing: 5px;
+          ">
+        9
+      </text>
+      <text transform="translate(594.26 449.26)" style="
+            font-size: 28px;
+            fill: #0fb2ee;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+            letter-spacing: 5px;
+          ">
+        12
+      </text>
+      <text transform="translate(875 363)" style="
+            font-size: 48px;
+            fill: #910acf;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          ">
+        $10,000
+      </text>
+      <text transform="translate(885 468.5)" style="
+            font-size: 48px;
+            fill: #910acf;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          ">
+        35.25%
+      </text>
+      <text transform="translate(890 574)" style="
+            font-size: 48px;
+            fill: #910acf;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+          ">
+        $3,525
+      </text>
+      <rect x="563.7" y="670.5" width="255" height="46" rx="25" ry="25" style="
+            stroke: #910acf;
+            stroke-miterlimit: 10;
+            stroke-width: 3px;
+            border-radius: 4px;
+            cursor: pointer;
+          " />
+      <text transform="translate(575 699.33)" style="
+            font-size: 14px;
+            fill: #fff;
+            font-family: ArialMT, Arial;
+            letter-spacing: 5px;
+            cursor: pointer;
+          ">
+        CALCULATE YIELD
+      </text>
     </svg>
   </div>
   <!-- Solutions Starts -->
@@ -324,7 +659,7 @@
           " />
       <polygon
         points="249.3 167.2 249.3 200.8 523.2 210.5 523.2 254 508.7 271.6 278.2 260.7 266.1 270.1 238.9 269.1 226.2 257.6 226.2 167.2 249.3 167.2"
-        style="fill: #0695c9" />
+        style="fill: url(#trail-light-round)" />
       <image width="404" height="353" transform="translate(538.34 380.39) scale(0.7)" xlink:href="images/orbs-3.gif"
         style="isolation: isolate" />
       <image width="407" height="355" transform="translate(891.19 394.39) scale(0.75)" xlink:href="images/orbs-2.gif"
@@ -992,7 +1327,7 @@
         <image width="654" height="538" transform="translate(620 106)" xlink:href="images/lyra1.png"
           style="isolation: isolate" />
       </g>
-      <text transform="translate(673 175)" style="
+      <text id="lyra-text" transform="translate(673 175)" style="
             isolation: isolate;
             font-size: 18px;
             fill: #fff;
@@ -1245,7 +1580,7 @@
           ">
         3KEY ADVANTAGES
       </text>
-      <text transform="translate(785 230)" style="
+      <text class="key-text" transform="translate(785 230)" style="
             isolation: isolate;
             font-size: 18px;
             fill: #fff;
@@ -1256,7 +1591,7 @@
         <tspan x="0" dy="20px">data analytics to support</tspan>
         <tspan x="0" dy="20px">decision making</tspan>
       </text>
-      <text transform="translate(785 365)" style="
+      <text class="key-text" transform="translate(785 365)" style="
             isolation: isolate;
             font-size: 18px;
             fill: #fff;
@@ -1267,7 +1602,7 @@
         <tspan x="0" dy="20px">production by achieving</tspan>
         <tspan x="0" dy="20px">economies of scale.</tspan>
       </text>
-      <text transform="translate(785 480)" style="
+      <text class="key-text" transform="translate(785 480)" style="
             isolation: isolate;
             font-size: 18px;
             fill: #fff;
@@ -1333,263 +1668,7 @@
         ARE THE FUTURE OF FINANCE
       </text>
     </svg>
-  </div>
-  <!-- Approach Starts -->
-  <div id="approach-01" class="bg-colorful">
-    <svg id="d2bc031f-1026-4185-bc7a-ba2c732eec68" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1366 768">
-      <polygon points="698.93 659.89 962.88 202.71 434.97 202.71 698.93 659.89" style="
-            fill: none;
-            stroke: #2bd4f6;
-            stroke-miterlimit: 10;
-            stroke-width: 16px;
-          " />
-      <polygon points="698.93 659.15 965.02 202.87 432.83 202.87 698.93 659.15" style="
-            fill: none;
-            stroke: #f9f9f9;
-            stroke-miterlimit: 10;
-            stroke-width: 9px;
-          " />
-      <polygon points="697.59 544.4 865.98 252.74 529.2 252.74 697.59 544.4" style="
-            fill: none;
-            stroke: #bb1cff;
-            stroke-miterlimit: 10;
-            stroke-width: 11px;
-          " />
-      <polygon points="697.59 543.63 865.13 252.56 530.05 252.56 697.59 543.63" style="
-            fill: none;
-            stroke: #f9f9f9;
-            stroke-miterlimit: 10;
-            stroke-width: 5px;
-          " />
-      <polyline points="296.81 434.36 296.81 394.44 335.71 394.44"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="346.77" y1="390.53" x2="338.05" y2="399.24" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="342.41" y1="390.53" x2="337.77" y2="395.17" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="346.41" y1="394.53" x2="341.77" y2="399.17" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="339.38" y1="390.53" x2="337.41" y2="392.49" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="346.38" y1="397.53" x2="344.41" y2="399.49" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="1051.24" y1="439.36" x2="1051.24" y2="399.44"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="1055.92" y1="389.44" x2="1047.2" y2="398.16" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="1051.56" y1="389.44" x2="1046.92" y2="394.08" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="1055.56" y1="393.44" x2="1050.92" y2="398.08" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="1048.53" y1="389.44" x2="1046.56" y2="391.41" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="1055.53" y1="396.44" x2="1053.56" y2="398.41" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <g style="opacity: 0.3000029921531677">
-        <polygon
-          points="398.5 616.38 180.6 616.38 167.6 602.74 167.6 464.04 180.6 450.02 398.5 450.02 411.5 465.56 411.5 602.74 398.5 616.38"
-          style="fill: #064764" />
-      </g>
-      <polyline points="215.46 437.52 167.6 437.52 154.07 450.02 154.07 616.38 168.04 630.34 414.03 630.34"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="366.28 443.58 414.03 443.58 418.2 448.13 418.2 460.25"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="371.21 437.52 418.2 437.52 432.83 451.92 432.83 467.07"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polygon points="430.41 611.38 426.94 616.38 426.94 451.92 430.41 456.92 430.41 611.38" style="fill: #062130" />
-      <polyline points="294.79 624.84 406.96 624.84 420.6 613.22 420.6 542.99 426.66 537.94 426.66 616.38 418.2 624.84"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="432.83 533.2 432.83 616.38 418.2 630.34"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="294.79" y1="441.94" x2="280.14" y2="457.09"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="301.79" y1="441.94" x2="287.14" y2="457.09"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="308.79" y1="441.94" x2="294.14" y2="457.09"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <text transform="translate(185 500)" style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial">
-        <tspan x="0">We manage risks for</tspan>
-        <tspan x="0" dy="20px">clients with our</tspan>
-        <tspan x="0" dy="20px">security protocols</tspan>
-        <tspan x="0" dy="20px">and our in-house</tspan>
-        <tspan x="0" dy="20px">auditing team</tspan>
-        <tspan x="0" dy="20px"></tspan>
-        <tspan x="0" dy="20px"></tspan>
-      </text>
-      <g style="opacity: 0.3000029921531677">
-        <polygon
-          points="1152.59 630.38 934.69 630.38 921.69 616.74 921.69 478.04 934.69 464.02 1152.59 464.02 1165.59 479.56 1165.59 616.74 1152.59 630.38"
-          style="fill: #064764" />
-      </g>
-      <polyline points="969.55 451.52 921.69 451.52 908.16 464.02 908.16 630.38 922.13 644.34 1168.12 644.34"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="1120.38 457.58 1168.12 457.58 1172.29 462.13 1172.29 474.25"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="1125.3 451.52 1172.29 451.52 1186.92 465.92 1186.92 481.07"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polygon points="1184.5 625.38 1181.03 630.38 1181.03 465.92 1184.5 470.92 1184.5 625.38" style="fill: #062130" />
-      <polyline
-        points="1048.88 638.84 1161.05 638.84 1174.69 627.22 1174.69 556.99 1180.76 551.94 1180.76 630.38 1172.29 638.84"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="1186.92 547.2 1186.92 630.38 1172.29 644.34"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="1048.88" y1="455.94" x2="1034.23" y2="471.09"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="1055.88" y1="455.94" x2="1041.23" y2="471.09"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="1062.88" y1="455.94" x2="1048.23" y2="471.09"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <text transform="translate(945 505)" style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial">
-        <tspan x="0">We are able to</tspan>
-        <tspan x="0" dy="20px">effeciently deploy</tspan>
-        <tspan x="0" dy="20px">capital to maximize</tspan>
-        <tspan x="0" dy="20px">returns in a</tspan>
-        <tspan x="0" dy="20px">scalable cost-</tspan>
-        <tspan x="0" dy="20px">efficient manner.</tspan>
-      </text>
-      <g style="opacity: 0.3000029921531677">
-        <polygon
-          points="1228.06 287.1 1010.16 287.1 997.16 273.45 997.16 134.76 1010.16 120.74 1228.06 120.74 1241.06 136.28 1241.06 273.45 1228.06 287.1"
-          style="fill: #064764" />
-      </g>
-      <polyline points="1045.03 108.23 997.16 108.23 983.64 120.74 983.64 287.1 997.6 301.06 1243.6 301.06"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="1195.85 114.3 1243.6 114.3 1247.77 118.84 1247.77 130.97"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="1200.78 108.23 1247.76 108.23 1262.4 122.63 1262.4 137.79"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polygon points="1259.97 282.1 1256.5 287.1 1256.5 122.63 1259.97 127.63 1259.97 282.1" style="fill: #062130" />
-      <polyline
-        points="1124.35 295.56 1236.52 295.56 1250.16 283.94 1250.16 213.71 1256.23 208.66 1256.23 287.1 1247.76 295.56"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <polyline points="1262.4 203.92 1262.4 287.1 1247.76 301.06"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="1124.35" y1="112.65" x2="1109.7" y2="127.81"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="1131.35" y1="112.65" x2="1116.7" y2="127.81"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="1138.35" y1="112.65" x2="1123.7" y2="127.81"
-        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <text transform="translate(1020 170)" style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial">
-        <tspan X="0">We offer clients a</tspan>
-        <tspan x="0" dy="20px">simple and smooth</tspan>
-        <tspan x="0" dy="20px">transition to</tspan>
-        <tspan x="0" dy="20px">participate in</tspan>
-        <tspan x="0" dy="20px">the DeFi space</tspan>
-        <tspan x="0" dy="20px"></tspan>
-      </text>
-      <text transform="translate(356.79 403.23)" style="
-            isolation: isolate;
-            font-size: 22px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-            letter-spacing: 5px;
-          ">
-        SECURE
-      </text>
-      <text transform="translate(637.19 159.9)" style="
-            isolation: isolate;
-            font-size: 22px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-            letter-spacing: 5px;
-          ">
-        SEAMLESS
-      </text>
-      <text transform="translate(903.62 402.33)" style="
-            isolation: isolate;
-            font-size: 22px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-            letter-spacing: 5px;
-          ">
-        SCALABLE
-      </text>
-      <text transform="matrix(1, 0.01, -0.01, 1, 580, 300)" style="
-            font-size: 36px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            letter-spacing: 5px;
-          ">
-        APPROACH
-      </text>
-      <line x1="724.5" y1="122.44" x2="983" y2="122.44" style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
-      <line x1="722.77" y1="118.53" x2="714.05" y2="127.24" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="718.41" y1="118.53" x2="713.77" y2="123.17" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="722.41" y1="122.53" x2="717.77" y2="127.17" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="715.38" y1="118.53" x2="713.41" y2="120.49" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-      <line x1="722.38" y1="125.53" x2="720.41" y2="127.49" style="
-            fill: none;
-            stroke: #064764;
-            stroke-miterlimit: 10;
-            stroke-width: 2px;
-          " />
-    </svg>
-  </div>
+  </div>  
   <div id="approach-02" class="bg-dark">
     <svg id="fb2cbc4a-d134-488c-90d9-88cc606ba003" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1366 768">
@@ -1900,304 +1979,261 @@
         <tspan x="0" DY="20px">everyone to participate</tspan>
       </text>
     </svg>
-  </div>
-  <!-- Performances Starts -->
-  <div id="performances-01" class="bg-dark">
-    <svg id="c401dc5d-381a-4cb1-a1a7-39248e79f50c" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 1366 768">
-      <rect x="132.44" y="296.73" width="542.09" height="160.08" rx="6.79" ry="6.79" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-      <rect x="248.14" y="491.22" width="275.78" height="145.12" rx="6.79" ry="6.79" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-      <rect x="545.36" y="491.22" width="275.78" height="145.12" rx="6.79" ry="6.79" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-      <rect x="843.59" y="491.22" width="275.78" height="145.12" rx="6.79" ry="6.79" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-      <rect x="693.97" y="296.73" width="542.09" height="160.08" rx="6.79" ry="6.79" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-      <text transform="translate(249.72 201.46) rotate(0.31)" style="
-            font-size: 36px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-          ">
-        PERFORMANCES
-      </text>
-      <text transform="translate(330 417.46) rotate(0.31)"
-        style="font-size: 60px; fill: #fff; font-family: ArialMT, Arial">
-        169%
-      </text>
-      <polyline points="240.16 218.43 612.19 218.43 702.45 128.17 881.49 128.17 881.49 0" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-      <text transform="translate(215 341.61)" style="
-            font-size: 18px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        PAST 7 DAYS ESTIMATED APR
-      </text>
-      <text transform="translate(328.17 564.72) rotate(0.31)"
-        style="font-size: 48px; fill: #fff; font-family: ArialMT, Arial">
-        600%
-      </text>
-      <text transform="translate(268.58 595)" style="
-            font-size: 18px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        <tspan x="55">AVERAGE</tspan>
-        <tspan x="40" dy="20px">ANNUAL ROI</tspan>
-      </text>
-      <text transform="translate(639.35 563.41) rotate(0.31)"
-        style="font-size: 48px; fill: #fff; font-family: ArialMT, Arial">
-        15+
-      </text>
-      <text transform="translate(590 595)" style="
-            font-size: 18px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        <tspan x="25">PROJECTS</tspan>
-        <tspan x="0" dy="20px">PARTICIPATED</tspan>
-      </text>
-      <text transform="translate(919.62 563.41) rotate(0.31)"
-        style="font-size: 48px; fill: #fff; font-family: ArialMT, Arial">
-        100%
-      </text>
-      <text transform="translate(885 595)" style="
-            font-size: 18px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        <tspan x="20">CUSTOMER</tspan>
-        <tspan x="0" dy="20px">SATISFACTION</tspan>
-      </text>
-      <text transform="translate(880 419.56) rotate(0.31)"
-        style="font-size: 60px; fill: #fff; font-family: ArialMT, Arial">
-        230%
-      </text>
-      <text transform="translate(775 341.61)" style="
-            font-size: 18px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        PAST 7 DAYS ESTIMATED APY
-      </text>
-      <line x1="683" y1="768" x2="683" y2="717.13" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-    </svg>
   </div>  
-  <div id="performances-02" class="bg-dark">
-    <svg id="08f2eb64-0059-4155-b3c7-88ffa258ab0f" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+  <!-- Approach Starts -->
+  <div id="approach-01" class="bg-colorful">
+    <svg id="d2bc031f-1026-4185-bc7a-ba2c732eec68" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1366 768">
-      <polyline points="240.16 218.43 612.19 218.43 702.45 128.17 881.49 128.17 881.49 0" style="
+      <polygon points="698.93 659.89 962.88 202.71 434.97 202.71 698.93 659.89" style="
             fill: none;
-            stroke: #0695c9;
+            stroke: #2bd4f6;
             stroke-miterlimit: 10;
-            stroke-width: 3px;
+            stroke-width: 16px;
           " />
-      <line x1="683" y1="768" x2="683" y2="717.13" style="
+      <polygon points="698.93 659.15 965.02 202.87 432.83 202.87 698.93 659.15" style="
             fill: none;
-            stroke: #0695c9;
+            stroke: #f9f9f9;
             stroke-miterlimit: 10;
-            stroke-width: 3px;
+            stroke-width: 9px;
           " />
-      <rect x="750" y="200" width="410" height="410" rx="5" ry="5" style="
+      <polygon points="697.59 544.4 865.98 252.74 529.2 252.74 697.59 544.4" style="
             fill: none;
-            stroke: #0695c9;
+            stroke: #bb1cff;
             stroke-miterlimit: 10;
-            stroke-width: 3px;
+            stroke-width: 11px;
           " />
-      <line x1="661.5" y1="360.5" x2="236.5" y2="360.5" style="
+      <polygon points="697.59 543.63 865.13 252.56 530.05 252.56 697.59 543.63" style="
             fill: none;
-            stroke: #0695c9;
+            stroke: #f9f9f9;
             stroke-miterlimit: 10;
-            stroke-width: 3px;
+            stroke-width: 5px;
           " />
-      <rect x="236.5" y="415.5" width="425" height="46" rx="5" ry="5" style="
+      <polyline points="296.81 434.36 296.81 394.44 335.71 394.44"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="346.77" y1="390.53" x2="338.05" y2="399.24" style="
             fill: none;
-            stroke: #0695c9;
+            stroke: #064764;
             stroke-miterlimit: 10;
-            stroke-width: 3px;
+            stroke-width: 2px;
           " />
-      <text transform="translate(235.79 295.4)" style="
-            font-size: 14px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        FUND ALLOCATION ( USDT )
+      <line x1="342.41" y1="390.53" x2="337.77" y2="395.17" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="346.41" y1="394.53" x2="341.77" y2="399.17" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="339.38" y1="390.53" x2="337.41" y2="392.49" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="346.38" y1="397.53" x2="344.41" y2="399.49" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="1051.24" y1="439.36" x2="1051.24" y2="399.44"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="1055.92" y1="389.44" x2="1047.2" y2="398.16" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="1051.56" y1="389.44" x2="1046.92" y2="394.08" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="1055.56" y1="393.44" x2="1050.92" y2="398.08" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="1048.53" y1="389.44" x2="1046.56" y2="391.41" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="1055.53" y1="396.44" x2="1053.56" y2="398.41" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <g style="opacity: 0.3000029921531677">
+        <polygon
+          points="398.5 616.38 180.6 616.38 167.6 602.74 167.6 464.04 180.6 450.02 398.5 450.02 411.5 465.56 411.5 602.74 398.5 616.38"
+          style="fill: #064764" />
+      </g>
+      <polyline points="215.46 437.52 167.6 437.52 154.07 450.02 154.07 616.38 168.04 630.34 414.03 630.34"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="366.28 443.58 414.03 443.58 418.2 448.13 418.2 460.25"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="371.21 437.52 418.2 437.52 432.83 451.92 432.83 467.07"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polygon points="430.41 611.38 426.94 616.38 426.94 451.92 430.41 456.92 430.41 611.38" style="fill: #062130" />
+      <polyline points="294.79 624.84 406.96 624.84 420.6 613.22 420.6 542.99 426.66 537.94 426.66 616.38 418.2 624.84"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="432.83 533.2 432.83 616.38 418.2 630.34"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="294.79" y1="441.94" x2="280.14" y2="457.09"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="301.79" y1="441.94" x2="287.14" y2="457.09"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="308.79" y1="441.94" x2="294.14" y2="457.09"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <text transform="translate(185 500)" style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial">
+        <tspan x="0">We manage risks for</tspan>
+        <tspan x="0" dy="20px">clients with our</tspan>
+        <tspan x="0" dy="20px">security protocols</tspan>
+        <tspan x="0" dy="20px">and our in-house</tspan>
+        <tspan x="0" dy="20px">auditing team</tspan>
+        <tspan x="0" dy="20px"></tspan>
+        <tspan x="0" dy="20px"></tspan>
       </text>
-      <text transform="translate(785 260)" style="
-            font-size: 26px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            letter-spacing: 5px;
-          ">
-        ESTIMATED RETURNS
+      <g style="opacity: 0.3000029921531677">
+        <polygon
+          points="1152.59 630.38 934.69 630.38 921.69 616.74 921.69 478.04 934.69 464.02 1152.59 464.02 1165.59 479.56 1165.59 616.74 1152.59 630.38"
+          style="fill: #064764" />
+      </g>
+      <polyline points="969.55 451.52 921.69 451.52 908.16 464.02 908.16 630.38 922.13 644.34 1168.12 644.34"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="1120.38 457.58 1168.12 457.58 1172.29 462.13 1172.29 474.25"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="1125.3 451.52 1172.29 451.52 1186.92 465.92 1186.92 481.07"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polygon points="1184.5 625.38 1181.03 630.38 1181.03 465.92 1184.5 470.92 1184.5 625.38" style="fill: #062130" />
+      <polyline
+        points="1048.88 638.84 1161.05 638.84 1174.69 627.22 1174.69 556.99 1180.76 551.94 1180.76 630.38 1172.29 638.84"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="1186.92 547.2 1186.92 630.38 1172.29 644.34"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="1048.88" y1="455.94" x2="1034.23" y2="471.09"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="1055.88" y1="455.94" x2="1041.23" y2="471.09"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="1062.88" y1="455.94" x2="1048.23" y2="471.09"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <text transform="translate(945 505)" style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial">
+        <tspan x="0">We are able to</tspan>
+        <tspan x="0" dy="20px">effeciently deploy</tspan>
+        <tspan x="0" dy="20px">capital to maximize</tspan>
+        <tspan x="0" dy="20px">returns in a</tspan>
+        <tspan x="0" dy="20px">scalable cost-</tspan>
+        <tspan x="0" dy="20px">efficient manner.</tspan>
       </text>
-      <text transform="translate(865 303.4)" style="
-            font-size: 14px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        PORTFOLIO VALUE
+      <g style="opacity: 0.3000029921531677">
+        <polygon
+          points="1228.06 287.1 1010.16 287.1 997.16 273.45 997.16 134.76 1010.16 120.74 1228.06 120.74 1241.06 136.28 1241.06 273.45 1228.06 287.1"
+          style="fill: #064764" />
+      </g>
+      <polyline points="1045.03 108.23 997.16 108.23 983.64 120.74 983.64 287.1 997.6 301.06 1243.6 301.06"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="1195.85 114.3 1243.6 114.3 1247.77 118.84 1247.77 130.97"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="1200.78 108.23 1247.76 108.23 1262.4 122.63 1262.4 137.79"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polygon points="1259.97 282.1 1256.5 287.1 1256.5 122.63 1259.97 127.63 1259.97 282.1" style="fill: #062130" />
+      <polyline
+        points="1124.35 295.56 1236.52 295.56 1250.16 283.94 1250.16 213.71 1256.23 208.66 1256.23 287.1 1247.76 295.56"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <polyline points="1262.4 203.92 1262.4 287.1 1247.76 301.06"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="1124.35" y1="112.65" x2="1109.7" y2="127.81"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="1131.35" y1="112.65" x2="1116.7" y2="127.81"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="1138.35" y1="112.65" x2="1123.7" y2="127.81"
+        style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <text transform="translate(1020 170)" style="font-size: 18px; fill: #fff; font-family: ArialMT, Arial">
+        <tspan X="0">We offer clients a</tspan>
+        <tspan x="0" dy="20px">simple and smooth</tspan>
+        <tspan x="0" dy="20px">transition to</tspan>
+        <tspan x="0" dy="20px">participate in</tspan>
+        <tspan x="0" dy="20px">the DeFi space</tspan>
+        <tspan x="0" dy="20px"></tspan>
       </text>
-      <text transform="translate(865 410.4)" style="
-            font-size: 14px;
+      <text transform="translate(356.79 403.23)" style="
+            isolation: isolate;
+            font-size: 22px;
             fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        ESTIMATED YIELD
-      </text>
-      <text transform="translate(850 518.4)" style="
-            font-size: 14px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        ESTIMATED RETURNS
-      </text>
-      <text transform="translate(236.79 395.4)" style="
-            font-size: 14px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        PREFERRED DURATION
-      </text>
-      <text transform="translate(235.79 480.4)" style="
-            font-size: 14px;
-            fill: #0fb2ee;
             font-family: Arial-BoldMT, Arial;
             font-weight: 700;
-          ">
-        *IN MONTHS
-      </text>
-      <text transform="translate(235.79 337.4)" style="
-            font-size: 26px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
             letter-spacing: 5px;
           ">
-        $10,000
+        SECURE
       </text>
-      <text transform="translate(250 200) rotate(0.31)" style="
+      <text transform="translate(637.19 159.9)" style="
+            isolation: isolate;
+            font-size: 22px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+            letter-spacing: 5px;
+          ">
+        SEAMLESS
+      </text>
+      <text transform="translate(903.62 402.33)" style="
+            isolation: isolate;
+            font-size: 22px;
+            fill: #fff;
+            font-family: Arial-BoldMT, Arial;
+            font-weight: 700;
+            letter-spacing: 5px;
+          ">
+        SCALABLE
+      </text>
+      <text transform="matrix(1, 0.01, -0.01, 1, 580, 300)" style="
             font-size: 36px;
             fill: #fff;
             font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-          ">
-        CALCULATOR
-      </text>
-      <text transform="translate(277.26 450.26)" style="
-            font-size: 28px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
             letter-spacing: 5px;
           ">
-        3
+        APPROACH
       </text>
-      <text transform="translate(385.26 450.26)" style="
-            font-size: 28px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            letter-spacing: 5px;
-          ">
-        6
-      </text>
-      <text transform="translate(490.27 450.26)" style="
-            font-size: 28px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            letter-spacing: 5px;
-          ">
-        9
-      </text>
-      <text transform="translate(594.26 449.26)" style="
-            font-size: 28px;
-            fill: #0fb2ee;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-            letter-spacing: 5px;
-          ">
-        12
-      </text>
-      <text transform="translate(875 363)" style="
-            font-size: 48px;
-            fill: #910acf;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-          ">
-        $10,000
-      </text>
-      <text transform="translate(885 468.5)" style="
-            font-size: 48px;
-            fill: #910acf;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-          ">
-        35.25%
-      </text>
-      <text transform="translate(890 574)" style="
-            font-size: 48px;
-            fill: #910acf;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-          ">
-        $3,525
-      </text>
-      <rect x="563.7" y="670.5" width="255" height="46" rx="25" ry="25" style="
-            stroke: #910acf;
+      <line x1="724.5" y1="122.44" x2="983" y2="122.44" style="fill: none; stroke: #064764; stroke-miterlimit: 10" />
+      <line x1="722.77" y1="118.53" x2="714.05" y2="127.24" style="
+            fill: none;
+            stroke: #064764;
             stroke-miterlimit: 10;
-            stroke-width: 3px;
-            border-radius: 4px;
-            cursor: pointer;
+            stroke-width: 2px;
           " />
-      <text transform="translate(575 699.33)" style="
-            font-size: 14px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-            cursor: pointer;
-          ">
-        CALCULATE YIELD
-      </text>
+      <line x1="718.41" y1="118.53" x2="713.77" y2="123.17" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="722.41" y1="122.53" x2="717.77" y2="127.17" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="715.38" y1="118.53" x2="713.41" y2="120.49" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
+      <line x1="722.38" y1="125.53" x2="720.41" y2="127.49" style="
+            fill: none;
+            stroke: #064764;
+            stroke-miterlimit: 10;
+            stroke-width: 2px;
+          " />
     </svg>
   </div>
   <!-- Contact Starts -->

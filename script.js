@@ -15,18 +15,18 @@
 
   // Nav Animations
 
-gsap.from("#nav", {
-  duration: 1,
-  y: "-100%",    
-  ease: "bounce"
-});
+  gsap.from("#nav", {
+    duration: 1,
+    y: "-100%",
+    ease: "bounce",
+  });
 
-gsap.from("#nav > *", {
-  duration: 1,
-  delay: 1,
-  y: "-150%",  
-  stagger: 0.25
-});
+  gsap.from("#nav > *", {
+    duration: 1,
+    delay: 1,
+    y: "-150%",
+    stagger: 0.25,
+  });
 
   // Home Animations
 
@@ -34,29 +34,90 @@ gsap.from("#nav > *", {
     trigger: "#home",
     onEnter: () => {
       anime({
-        targets:
-          "#home svg path,#home svg line,#home svg polyline,#home svg polygon,#home svg rect,#home svg circle",
+        targets: "#home svg path.sol,#home svg path.appr,#home svg path.perf",
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1500,
+      });
+      gsap.from("#home-sol,#home-appr,#home-perf", {
+        delay: 0.5,
+        opacity: 0,
+        stagger: 0.5,
       });
     },
     onEnterBack: () => {
       anime({
-        targets:
-          "#home svg path,#home svg line,#home svg polyline,#home svg polygon,#home svg rect,#home svg circle",
+        targets: "#home svg path.sol,#home svg path.appr,#home svg path.perf",
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1500,
       });
+      gsap.from("#home-sol,#home-appr,#home-perf", {
+        delay: 0.5,
+        duration: 1,
+        opacity: 0,
+        stagger: 0.5,
+      });
     },
   });
+
+  document
+    .getElementById("home-perf")
+    .addEventListener("mouseenter", anim_performance);
+  document
+    .getElementById("home-perf")
+    .addEventListener("mouseleave", anim_performance_stop);
+
+  async function anim_performance() {
+    document.getElementById("performance-trail").classList.add("draw");
+    document
+      .getElementById("performance-circle")
+      .classList.remove("display-none");
+  }
+
+  async function anim_performance_stop() {
+    document.getElementById("performance-trail").classList.remove("draw");
+    document.getElementById("performance-circle").classList.add("display-none");
+  }
+
+  document
+    .getElementById("home-sol")
+    .addEventListener("mouseenter", anim_solution);
+  document
+    .getElementById("home-sol")
+    .addEventListener("mouseleave", anim_solution_stop);
+
+  async function anim_solution() {
+    document.getElementById("solution-trail").classList.add("draw");
+    document.getElementById("solution-circle").classList.remove("display-none");
+  }
+
+  async function anim_solution_stop() {
+    document.getElementById("solution-trail").classList.remove("draw");
+    document.getElementById("solution-circle").classList.add("display-none");
+  }
+
+  document
+    .getElementById("home-appr")
+    .addEventListener("mouseenter", anim_approach);
+  document
+    .getElementById("home-appr")
+    .addEventListener("mouseleave", anim_approach_stop);
+
+  async function anim_approach() {
+    document.getElementById("approach-trail").classList.add("draw");
+    document.getElementById("approach-circle").classList.remove("display-none");
+  }
+
+  async function anim_approach_stop() {
+    document.getElementById("approach-trail").classList.remove("draw");
+    document.getElementById("approach-circle").classList.add("display-none");
+  }
 
   // Solutions Animations
 
   ScrollTrigger.create({
-    trigger: "#solutions-01",
-    start: "top 80%",
+    trigger: "#solutions-01",    
     onEnter: () => {
       anime({
         targets:
@@ -78,8 +139,7 @@ gsap.from("#nav > *", {
   });
 
   ScrollTrigger.create({
-    trigger: "#solutions-02",
-    start: "top 80%",
+    trigger: "#solutions-02",    
     onEnter: () => {
       anime({
         targets:
@@ -87,6 +147,10 @@ gsap.from("#nav > *", {
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1500,
+      });
+      gsap.from("#lyra-text", {
+        duration: 1,
+        x: "200%",
       });
     },
     onEnterBack: () => {
@@ -97,12 +161,15 @@ gsap.from("#nav > *", {
         easing: "easeInOutQuad",
         duration: 1500,
       });
+      gsap.from("#lyra-text", {
+        duration: 1,
+        x: "200%",
+      });
     },
   });
 
   ScrollTrigger.create({
-    trigger: "#solutions-03",
-    start: "top 80%",
+    trigger: "#solutions-03",    
     onEnter: () => {
       anime({
         targets:
@@ -110,6 +177,11 @@ gsap.from("#nav > *", {
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1000,
+      });
+      gsap.from(".key-text", {
+        duration: 1,
+        x: "500%",
+        stagger: 0.5,
       });
     },
     onEnterBack: () => {
@@ -120,12 +192,15 @@ gsap.from("#nav > *", {
         easing: "easeInOutQuad",
         duration: 1000,
       });
+      gsap.from(".key-text", {
+        duration: 1,
+        x: "500%",
+      });
     },
   });
 
   ScrollTrigger.create({
-    trigger: "#solutions-04",
-    start: "top 80%",
+    trigger: "#solutions-04",    
     onEnter: () => {
       anime({
         targets:
@@ -149,8 +224,7 @@ gsap.from("#nav > *", {
   // Approach Animations
 
   ScrollTrigger.create({
-    trigger: "#approach-01",
-    start: "top 80%",
+    trigger: "#approach-01",    
     onEnter: () => {
       anime({
         targets:
@@ -172,8 +246,7 @@ gsap.from("#nav > *", {
   });
 
   ScrollTrigger.create({
-    trigger: "#approach-02",
-    start: "top 80%",
+    trigger: "#approach-02",    
     onEnter: () => {
       anime({
         targets:
@@ -195,8 +268,7 @@ gsap.from("#nav > *", {
   });
 
   ScrollTrigger.create({
-    trigger: "#approach-03",
-    start: "top 80%",
+    trigger: "#approach-03",    
     onEnter: () => {
       anime({
         targets:
@@ -218,8 +290,7 @@ gsap.from("#nav > *", {
   });
 
   ScrollTrigger.create({
-    trigger: "#approach-04",
-    start: "top 80%",
+    trigger: "#approach-04",    
     onEnter: () => {
       anime({
         targets:
@@ -243,8 +314,7 @@ gsap.from("#nav > *", {
   // Performances Animations
 
   ScrollTrigger.create({
-    trigger: "#performances-01",
-    start: "top 80%",
+    trigger: "#performances-01",    
     onEnter: () => {
       anime({
         targets:
@@ -266,8 +336,7 @@ gsap.from("#nav > *", {
   });
 
   ScrollTrigger.create({
-    trigger: "#performances-02",
-    start: "top 80%",
+    trigger: "#performances-02",    
     onEnter: () => {
       anime({
         targets:
@@ -291,8 +360,7 @@ gsap.from("#nav > *", {
   // Contact Animations
 
   ScrollTrigger.create({
-    trigger: "#contact",
-    start: "top 80%",
+    trigger: "#contact",    
     onEnter: () => {
       anime({
         targets:

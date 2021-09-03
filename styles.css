@@ -36,11 +36,10 @@ button:hover {
   outline: none;
 }
 
-/* .sol,
-.perf,
-.appr {
-  stroke-dasharray: 5;
-} */
+svg {
+  width: auto;
+  height: 100vh;
+}
 
 nav {
   position: fixed;
@@ -102,11 +101,7 @@ nav > div:nth-child(3) > button {
   border-radius: 4px;
   padding: 7.5px 15px;
   color: #fff;
-  background: rgba(255, 255, 255, 0.048);
-  /* background: -webkit-linear-gradient(#0695c9, #910acf);
-  background: -o-linear-gradient(#0695c9, #910acf);
-  background: -moz-linear-gradient(#0695c9, #910acf);
-  background: linear-gradient(#0695c9, #910acf); */
+  background: rgba(255, 255, 255, 0.048);  
   cursor: pointer;
 }
 
@@ -142,6 +137,8 @@ div {
   flex-direction: column;
 }
 
+/* Custome Classes Starts */
+
 .bg-dark {
   background: url("images/bg-dark.png") no-repeat center;
   background-size: cover;
@@ -152,13 +149,51 @@ div {
   background-size: cover;
 }
 
-svg {
-  width: auto;
-  height: 100vh;
+/* Custome Classes Ends */
+
+/*  */
+
+.circle-indicator {
+  filter: drop-shadow(0 0 40px #0695c9);
 }
+
+.glowing {
+  filter: drop-shadow(0 0 30px #0695c9);
+}
+
+.display-none {
+  display: none;
+}
+
+.draw-back {
+  stroke-dasharray: 2338.5;
+  stroke-dashoffset: 2338.5;
+  transition: all 0.5s ease;
+}
+
+.draw {
+  animation: dash2 1s linear 1 forwards;
+}
+
+@keyframes dash2 {
+  to {
+      stroke-dashoffset: 0;
+  }
+}
+
+/*  */
 
 @media screen and (max-width: 768px) {
   nav > ul > li > a {
     font-size: 18px;
   }
 }
+
+/* <linearGradient id="primary-gradient" gradientTransform=" rotate(90)">
+      <stop offset="0%" style="stop-color: #906; stop-opacity: 0.0"></stop>
+      <stop offset="10%" style="stop-color: #906; stop-opacity: 0.3"></stop>
+      <stop offset="50%" style="stop-color: #0695c9; stop-opacity: 1.0"></stop>
+      
+      <stop offset="90%" style="stop-color: #906; stop-opacity: 0.3"></stop>
+      <stop offset="100%" style="stop-color: #906; stop-opacity: 0.0"></stop>
+      </linearGradient> */
