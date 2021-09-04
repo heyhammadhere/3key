@@ -137,7 +137,7 @@ div {
   flex-direction: column;
 }
 
-/* Custome Classes Starts */
+/* Custom Classes Starts */
 
 .bg-dark {
   background: url("images/bg-dark.png") no-repeat center;
@@ -149,7 +149,7 @@ div {
   background-size: cover;
 }
 
-/* Custome Classes Ends */
+/* Custom Classes Ends */
 
 /*  */
 
@@ -214,15 +214,25 @@ div {
   stroke: #0695c9;
   stroke-miterlimit: 10;
   stroke-width: 3px;
-  filter: drop-shadow(5px 0px 5px #0695c9);  
+  filter: drop-shadow(5px 0px 5px #0695c9);
 }
 
-#solutions-01 path{
+#solutions-01 path {
   filter: drop-shadow(5px 0 8px #0695c9);
 }
 
-#solutions-01 polyline{
+#solutions-01 polyline {
   filter: drop-shadow(5px 0 8px #906);
+}
+
+.appr-seamless,
+.appr-secure,
+.appr-scalable {
+  cursor: pointer;
+}
+
+.op-0 {
+  display: none;
 }
 
 /*  */

@@ -117,7 +117,7 @@
   // Solutions Animations
 
   ScrollTrigger.create({
-    trigger: "#solutions-01",    
+    trigger: "#solutions-01",
     onEnter: () => {
       anime({
         targets:
@@ -139,7 +139,7 @@
   });
 
   ScrollTrigger.create({
-    trigger: "#solutions-02",    
+    trigger: "#solutions-02",
     onEnter: () => {
       anime({
         targets:
@@ -169,7 +169,7 @@
   });
 
   ScrollTrigger.create({
-    trigger: "#solutions-03",    
+    trigger: "#solutions-03",
     onEnter: () => {
       anime({
         targets:
@@ -200,7 +200,7 @@
   });
 
   ScrollTrigger.create({
-    trigger: "#solutions-04",    
+    trigger: "#solutions-04",
     onEnter: () => {
       anime({
         targets:
@@ -224,7 +224,7 @@
   // Approach Animations
 
   ScrollTrigger.create({
-    trigger: "#approach-01",    
+    trigger: "#approach-01",
     onEnter: () => {
       anime({
         targets:
@@ -246,7 +246,7 @@
   });
 
   ScrollTrigger.create({
-    trigger: "#approach-02",    
+    trigger: "#approach-02",
     onEnter: () => {
       anime({
         targets:
@@ -268,7 +268,7 @@
   });
 
   ScrollTrigger.create({
-    trigger: "#approach-03",    
+    trigger: "#approach-03",
     onEnter: () => {
       anime({
         targets:
@@ -290,7 +290,7 @@
   });
 
   ScrollTrigger.create({
-    trigger: "#approach-04",    
+    trigger: "#approach-04",
     onEnter: () => {
       anime({
         targets:
@@ -314,7 +314,7 @@
   // Performances Animations
 
   ScrollTrigger.create({
-    trigger: "#performances-01",    
+    trigger: "#performances-01",
     onEnter: () => {
       anime({
         targets:
@@ -336,7 +336,7 @@
   });
 
   ScrollTrigger.create({
-    trigger: "#performances-02",    
+    trigger: "#performances-02",
     onEnter: () => {
       anime({
         targets:
@@ -360,7 +360,7 @@
   // Contact Animations
 
   ScrollTrigger.create({
-    trigger: "#contact",    
+    trigger: "#contact",
     onEnter: () => {
       anime({
         targets:
@@ -380,4 +380,31 @@
       });
     },
   });
+
+  $(".appr-seamless").hover(
+    function () {
+      $(".seamless").show();
+    },
+    function () {
+      $(".seamless").hide();
+    }
+  );
+
+  $(".appr-secure").hover(
+    function () {
+      $(".secure").show();
+    },
+    function () {
+      $(".secure").hide();
+    }
+  );
+
+  $(".appr-scalable").hover(
+    function () {
+      $(".scalable").show();
+    },
+    function () {
+      $(".scalable").hide();
+    }
+  );
 })();
