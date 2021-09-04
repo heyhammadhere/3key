@@ -156,20 +156,21 @@ div {
 #performance-trail,
 #solution-trail,
 #approach-trail {
-  stroke-width: 2px;
+  stroke-width: 3px;
   stroke: url(#trail-light);
   stroke-opacity: 1;
   fill-opacity: 0;
+  filter: drop-shadow(0 0 40px #0695c9);
 }
 
 #home-perf,
 #home-sol,
 #home-appr {
   font-size: 36px;
-  fill: #910acf;
+  fill: #0695c9;
   font-family: Arial-BoldMT, Arial;
   font-weight: 700;
-  filter: drop-shadow(0 0 1.5rem #910acf);
+  filter: drop-shadow(0 0 1.5rem #0695c9);
 }
 
 .perf,
@@ -208,6 +209,22 @@ div {
   }
 }
 
+#performances-01 rect {
+  fill: none;
+  stroke: #0695c9;
+  stroke-miterlimit: 10;
+  stroke-width: 3px;
+  filter: drop-shadow(5px 0px 5px #0695c9);  
+}
+
+#solutions-01 path{
+  filter: drop-shadow(5px 0 8px #0695c9);
+}
+
+#solutions-01 polyline{
+  filter: drop-shadow(5px 0 8px #906);
+}
+
 /*  */
 
 @media screen and (max-width: 768px) {
@@ -215,12 +232,3 @@ div {
     font-size: 18px;
   }
 }
-
-/* <linearGradient id="primary-gradient" gradientTransform=" rotate(90)">
-      <stop offset="0%" style="stop-color: #906; stop-opacity: 0.0"></stop>
-      <stop offset="10%" style="stop-color: #906; stop-opacity: 0.3"></stop>
-      <stop offset="50%" style="stop-color: #0695c9; stop-opacity: 1.0"></stop>
-      
-      <stop offset="90%" style="stop-color: #906; stop-opacity: 0.3"></stop>
-      <stop offset="100%" style="stop-color: #906; stop-opacity: 0.0"></stop>
-      </linearGradient> */
