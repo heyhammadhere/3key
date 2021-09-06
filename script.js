@@ -1,27 +1,43 @@
 (() => {
-  let hamburger = document.querySelector(".hamburger");
-  let navLinks = document.querySelector(".nav-links");
-  let links = navLinks.querySelectorAll("a");
+  const navbar = document.getElementById("navbar");
+  const navbarToggle = navbar.querySelector(".navbar-toggle");
 
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("open");
+  function openMobileNavbar() {
+    navbar.classList.add("opened");
+    navbarToggle.setAttribute("aria-expanded", "true");
+  }
+
+  function closeMobileNavbar() {
+    navbar.classList.remove("opened");
+    navbarToggle.setAttribute("aria-expanded", "false");
+  }
+
+  navbarToggle.addEventListener("click", () => {
+    if (navbar.classList.contains("opened")) {
+      closeMobileNavbar();
+    } else {
+      openMobileNavbar();
+    }
   });
 
-  links.forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("open");
-    });
+  const navbarMenu = navbar.querySelector("#navbar-menu");
+  const navbarLinksContainer = navbar.querySelector(".navbar-links");
+
+  navbarLinksContainer.addEventListener("click", (clickEvent) => {
+    clickEvent.stopPropagation();
   });
+
+  navbarMenu.addEventListener("click", closeMobileNavbar);
 
   // Nav Animations
 
-  gsap.from("#nav", {
+  gsap.from("#navbar", {
     duration: 1,
     y: "-100%",
     ease: "bounce",
   });
 
-  gsap.from("#nav > *", {
+  gsap.from("#navbar > *", {
     duration: 1,
     delay: 1,
     y: "-150%",

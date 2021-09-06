@@ -1,3 +1,10 @@
+:root {
+  --navbar-bg-color: #c1c1c113;
+  --navbar-text-color: hsl(0, 0%, 85%);
+  --navbar-text-color-focus: white;
+  --navbar-bg-contrast: hsl(0, 0%, 25%);
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -36,108 +43,169 @@ button:hover {
   outline: none;
 }
 
-svg {
-  width: auto;
-  height: 100vh;
+.container {
+  max-width: 1000px;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  margin: 0 auto;
 }
 
-nav {
+#navbar {
+  --navbar-height: 64px;
   position: fixed;
-  top: 0%;
-  left: 0%;
+  height: var(--navbar-height);
+  background-color: var(--navbar-bg-color);
+  left: 0;
+  right: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-container {
   display: flex;
-  flex-direction: row;
-  width: 100vw;
-  justify-content: space-around;
+  height: 100%;
+  justify-content: space-between;
   align-items: center;
-  padding: 4px;
-  background-color: rgba(255, 255, 255, 0.05);
 }
 
-nav > button:nth-child(1) {
-  background: transparent;
+.navbar-item {  
+  padding: 1em 1em;
+  width: 75%;
+}
+
+.home-link,
+.navbar-link {
+  color: var(--navbar-text-color);
+  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  display: flex;
+  font-weight: 400;
+  align-items: center;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.home-link:focus,
+.home-link:hover {
+  color: var(--navbar-text-color-focus);
+}
+
+.navbar-link {
+  justify-content: center;
+  width: 100%;
+  padding: 0.5em 0.25em;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+#navbar-menu > ul > li:nth-child(5) > a{
+  font-weight: 700;
+  border: 2px solid #906;
+}
+
+#navbar-menu > ul > li:nth-child(6) > a{
+  font-weight: 700;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.navbar-link:focus,
+.navbar-link:hover {
+  color: var(--navbar-text-color-focus);  
+}
+
+.navbar-logo > img {  
+  width: 25px;
+}
+
+.navbar-toggle {
   cursor: pointer;
-  z-index: 9;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-nav > button:nth-child(1) > span {
+.icon-bar {
   display: block;
-  width: 35px;
-  height: 5px;
-  margin: 5px;
-  border-radius: 4px;
-  background: -webkit-linear-gradient(#0695c9, #910acf);
-  background: -o-linear-gradient(#0695c9, #910acf);
-  background: -moz-linear-gradient(#0695c9, #910acf);
-  background: linear-gradient(#0695c9, #910acf);
+  width: 25px;
+  height: 4px;
+  margin: 2px;
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out,
+    opacity 0.2s ease-in-out;
+  background-color: var(--navbar-text-color);
 }
 
-nav > a:nth-child(2) > img {
+.navbar-toggle:focus .icon-bar,
+.navbar-toggle:hover .icon-bar {
+  background-color: var(--navbar-text-color-focus);
+}
+
+#navbar.opened .navbar-toggle .icon-bar:first-child,
+#navbar.opened .navbar-toggle .icon-bar:last-child {
+  position: absolute;
+  margin: 0;
   width: 30px;
 }
 
-nav > div:nth-child(3) {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+#navbar.opened .navbar-toggle .icon-bar:first-child {
+  transform: rotate(45deg);
 }
 
-nav > div:nth-child(3) > a {
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-  border: 3px solid #910acf;
-  border-radius: 25px;
-  margin-right: 7.5px;
-  padding: 7.5px 15px;
-  color: #fff;
+#navbar.opened .navbar-toggle .icon-bar:nth-child(2) {
+  opacity: 0;
 }
 
-nav > div:nth-child(3) > button {
-  font-size: 18px;
-  font-weight: bold;
-  border: 1px solid #c1c1c141;
-  border-radius: 4px;
-  padding: 7.5px 15px;
-  color: #fff;
-  background: rgba(255, 255, 255, 0.048);
-  cursor: pointer;
+#navbar.opened .navbar-toggle .icon-bar:last-child {
+  transform: rotate(-45deg);
 }
 
-nav > ul {
+#navbar-menu {
   position: fixed;
-  top: 0%;
-  left: 0%;
+  top: var(--navbar-height);  
+  transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  left: 0;
+  right: 0;
+}
+
+#navbar.opened #navbar-menu {
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 1;
+  visibility: visible;
+}
+
+.navbar-links {
+  list-style-type: none;
+  max-height: 0;
+  overflow: hidden;
+  position: absolute;  
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
-  justify-content: space-around;
   align-items: center;
-  clip-path: circle(5vw at -5% -5%);
-  background-color: black;
-  transition: all 0.5s;
+  left: 0;
+  right: 0;
+  margin: 1rem;
+  border-radius: 5px;  
+  background-color: rgba(0, 0, 0, 0.75);  
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-nav > ul.open {
-  clip-path: circle(150vw);
+#navbar.opened .navbar-links {  
+  max-height: none;
 }
 
-nav > ul > li > a {
-  text-decoration: none;
-  font-size: 28px;
-  font-weight: bold;
-  letter-spacing: 5px;
-  color: #fff;
+svg {
+  width: auto;
+  height: 100vh;
 }
 
 div {
   display: flex;
   flex-direction: column;
 }
-
-/* Custom Classes Starts */
 
 .bg-dark {
   background: url("images/bg-dark.png") no-repeat center;
@@ -148,10 +216,6 @@ div {
   background: url("images/bg-colorful.png") no-repeat center;
   background-size: cover;
 }
-
-/* Custom Classes Ends */
-
-/*  */
 
 #performance-trail,
 #solution-trail,
@@ -200,10 +264,10 @@ div {
 }
 
 .draw {
-  animation: dash2 1s linear 1 forwards;
+  animation: dash 1s linear 1 forwards;
 }
 
-@keyframes dash2 {
+@keyframes dash {
   to {
     stroke-dashoffset: 0;
   }
@@ -235,10 +299,28 @@ div {
   display: none;
 }
 
-/*  */
-
-@media screen and (max-width: 768px) {
-  nav > ul > li > a {
-    font-size: 18px;
+@media screen and (min-width: 700px) {
+  .navbar-toggle {
+    display: none;
   }
+
+  #navbar #navbar-menu,
+  #navbar.opened #navbar-menu {
+    visibility: visible;
+    opacity: 1;
+    position: static;
+    display: block;    
+  }
+
+  #navbar .navbar-links,
+  #navbar.opened .navbar-links {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    position: static;
+    flex-direction: row;
+    list-style-type: none;
+    max-height: max-content;        
+  background-color: transparent;
+  }  
 }
