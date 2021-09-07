@@ -1,5 +1,5 @@
-:root {
-  --navbar-bg-color: #c1c1c113;
+:root {  
+  --navbar-bg-color: #0E1323;
   --navbar-text-color: hsl(0, 0%, 85%);
   --navbar-text-color-focus: white;
   --navbar-bg-contrast: hsl(0, 0%, 25%);
@@ -67,7 +67,7 @@ button:hover {
   align-items: center;
 }
 
-.navbar-item {  
+.navbar-item {
   padding: 0.25em 1em;
   width: 75%;
 }
@@ -96,22 +96,22 @@ button:hover {
   white-space: nowrap;
 }
 
-#navbar-menu > ul > li:nth-child(5) > a{
+#navbar-menu > ul > li:nth-child(5) > a {
   font-weight: 700;
   border: 2px solid #906;
 }
 
-#navbar-menu > ul > li:nth-child(6) > a{
+#navbar-menu > ul > li:nth-child(6) > a {
   font-weight: 700;
   border: 2px solid rgba(255, 255, 255, 0.25);
 }
 
 .navbar-link:focus,
 .navbar-link:hover {
-  color: var(--navbar-text-color-focus);  
+  color: var(--navbar-text-color-focus);
 }
 
-.navbar-logo > img {  
+.navbar-logo > img {
   width: 25px;
 }
 
@@ -163,7 +163,7 @@ button:hover {
 
 #navbar-menu {
   position: fixed;
-  top: var(--navbar-height);  
+  top: var(--navbar-height);
   transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
   opacity: 0;
   visibility: hidden;
@@ -181,19 +181,19 @@ button:hover {
   list-style-type: none;
   max-height: 0;
   overflow: hidden;
-  position: absolute;  
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
   left: 0;
   right: 0;
   margin: 1rem;
-  border-radius: 5px;  
-  background-color: rgba(0,0,0,0.75);
+  border-radius: 5px;
+  background-color: var(--navbar-bg-color);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
-#navbar.opened .navbar-links {  
+#navbar.opened .navbar-links {
   max-height: none;
 }
 
@@ -309,7 +309,7 @@ div {
     visibility: visible;
     opacity: 1;
     position: static;
-    display: block;    
+    display: block;
   }
 
   #navbar .navbar-links,
@@ -320,7 +320,7 @@ div {
     position: static;
     flex-direction: row;
     list-style-type: none;
-    max-height: max-content;        
-  background-color: transparent;
-  }  
+    max-height: max-content;
+    background-color: transparent;
+  }
 }

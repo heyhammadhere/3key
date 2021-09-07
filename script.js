@@ -237,6 +237,72 @@
     },
   });
 
+  ScrollTrigger.create({
+    trigger: "#solutions-05",
+    onEnter: () => {
+      anime({
+        targets:
+          "#solutions-05 svg path,#solutions-05 svg line,#solutions-05 svg polyline,#solutions-05 svg polygon,#solutions-05 svg rect,#solutions-05 svg circle,#solutions-05 svg ellipse",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: "easeInOutQuad",
+        duration: 1500,
+      });
+    },
+    onEnterBack: () => {
+      anime({
+        targets:
+          "#solutions-05 svg path,#solutions-05 svg line,#solutions-05 svg polyline,#solutions-05 svg polygon,#solutions-05 svg rect,#solutions-05 svg circle,#solutions-05 svg ellipse",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: "easeInOutQuad",
+        duration: 1500,
+      });
+    },
+  });
+
+  ScrollTrigger.create({
+    trigger: "#solutions-06",
+    onEnter: () => {
+      anime({
+        targets:
+          "#solutions-06 svg path,#solutions-06 svg line,#solutions-06 svg polyline,#solutions-06 svg polygon,#solutions-06 svg rect,#solutions-06 svg circle,#solutions-06 svg ellipse",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: "easeInOutQuad",
+        duration: 1500,
+      });
+    },
+    onEnterBack: () => {
+      anime({
+        targets:
+          "#solutions-06 svg path,#solutions-06 svg line,#solutions-06 svg polyline,#solutions-06 svg polygon,#solutions-06 svg rect,#solutions-06 svg circle,#solutions-06 svg ellipse",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: "easeInOutQuad",
+        duration: 1500,
+      });
+    },
+  });
+
+  ScrollTrigger.create({
+    trigger: "#solutions-07",
+    onEnter: () => {
+      anime({
+        targets:
+          "#solutions-07 svg path,#solutions-07 svg line,#solutions-07 svg polyline,#solutions-07 svg polygon,#solutions-07 svg rect,#solutions-07 svg circle,#solutions-07 svg ellipse",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: "easeInOutQuad",
+        duration: 1500,
+      });
+    },
+    onEnterBack: () => {
+      anime({
+        targets:
+          "#solutions-07 svg path,#solutions-07 svg line,#solutions-07 svg polyline,#solutions-07 svg polygon,#solutions-07 svg rect,#solutions-07 svg circle,#solutions-07 svg ellipse",
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: "easeInOutQuad",
+        duration: 1500,
+      });
+    },
+  });
+
   // Approach Animations
 
   ScrollTrigger.create({
@@ -254,72 +320,6 @@
       anime({
         targets:
           "#approach-01 svg path,#approach-01 svg line,#approach-01 svg polyline,#approach-01 svg polygon,#approach-01 svg rect,#approach-01 svg circle,#approach-01 svg ellipse",
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: "easeInOutQuad",
-        duration: 1500,
-      });
-    },
-  });
-
-  ScrollTrigger.create({
-    trigger: "#approach-02",
-    onEnter: () => {
-      anime({
-        targets:
-          "#approach-02 svg path,#approach-02 svg line,#approach-02 svg polyline,#approach-02 svg polygon,#approach-02 svg rect,#approach-02 svg circle,#approach-02 svg ellipse",
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: "easeInOutQuad",
-        duration: 1500,
-      });
-    },
-    onEnterBack: () => {
-      anime({
-        targets:
-          "#approach-02 svg path,#approach-02 svg line,#approach-02 svg polyline,#approach-02 svg polygon,#approach-02 svg rect,#approach-02 svg circle,#approach-02 svg ellipse",
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: "easeInOutQuad",
-        duration: 1500,
-      });
-    },
-  });
-
-  ScrollTrigger.create({
-    trigger: "#approach-03",
-    onEnter: () => {
-      anime({
-        targets:
-          "#approach-03 svg path,#approach-03 svg line,#approach-03 svg polyline,#approach-03 svg polygon,#approach-03 svg rect,#approach-03 svg circle,#approach-03 svg ellipse",
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: "easeInOutQuad",
-        duration: 1500,
-      });
-    },
-    onEnterBack: () => {
-      anime({
-        targets:
-          "#approach-03 svg path,#approach-03 svg line,#approach-03 svg polyline,#approach-03 svg polygon,#approach-03 svg rect,#approach-03 svg circle,#approach-03 svg ellipse",
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: "easeInOutQuad",
-        duration: 1500,
-      });
-    },
-  });
-
-  ScrollTrigger.create({
-    trigger: "#approach-04",
-    onEnter: () => {
-      anime({
-        targets:
-          "#approach-04 svg path,#approach-04 svg line,#approach-04 svg polyline,#approach-04 svg polygon,#approach-04 svg rect,#approach-04 svg circle,#approach-04 svg ellipse",
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: "easeInOutQuad",
-        duration: 1500,
-      });
-    },
-    onEnterBack: () => {
-      anime({
-        targets:
-          "#approach-04 svg path,#approach-04 svg line,#approach-04 svg polyline,#approach-04 svg polygon,#approach-04 svg rect,#approach-04 svg circle,#approach-04 svg ellipse",
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1500,
