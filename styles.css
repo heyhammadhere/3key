@@ -299,6 +299,45 @@ div {
   display: none;
 }
 
+foreignObject{  
+  width: 450px;  
+  height: 300px;
+  padding-left: 15px;
+}
+
+foreignObject *{
+  display: block;
+}
+
+foreignObject label{
+  font-size: 10px;
+  letter-spacing: 2.5px;
+}
+
+foreignObject input{
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 3px solid #0695c9;
+  width: 400px;
+  height: 50px;
+  margin: 5px 0px;
+  font-size: 18px;
+}
+
+foreignObject button,foreignObject button:focus,foreignObject button:active{
+  outline: none;
+  color: #fff;
+  background-image: linear-gradient(#0695c9, rgb(97, 31, 202), #906);
+  width: 400px;
+  height: 50px;
+  margin: 20px 0px;  
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 700px) {  
   .navbar-toggle {
     display: none;
