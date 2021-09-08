@@ -56,8 +56,10 @@ button:hover {
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
   left: 0;
-  right: 0;
+  right: 0;  
+  padding: 10px 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  transition: all 1s ease;
 }
 
 .navbar-container {
@@ -68,7 +70,7 @@ button:hover {
 }
 
 .navbar-item {
-  padding: 0.25em 1em;
+  padding: 0.75em 2.5em;
   width: 75%;
 }
 
@@ -78,8 +80,9 @@ button:hover {
   transition: color 0.2s ease-in-out;
   text-decoration: none;
   display: flex;
+  font-size: 11px;
   font-weight: 400;
-  align-items: center;
+  align-items: center;  
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -90,20 +93,13 @@ button:hover {
 
 .navbar-link {
   justify-content: center;
-  width: 100%;
-  padding: 0.5em 0.25em;
+  width: 100%;  
   border-radius: 5px;
   white-space: nowrap;
 }
 
-#navbar-menu > ul > li:nth-child(5) > a {
-  font-weight: 700;
-  border: 2px solid #906;
-}
-
-#navbar-menu > ul > li:nth-child(6) > a {
-  font-weight: 700;
-  border: 2px solid rgba(255, 255, 255, 0.25);
+#navbar-menu > ul > li:nth-child(6){
+  border-left: 2px solid none;
 }
 
 .navbar-link:focus,
@@ -112,7 +108,7 @@ button:hover {
 }
 
 .navbar-logo > img {
-  width: 25px;
+  width: 30px;
 }
 
 .navbar-toggle {
@@ -187,8 +183,7 @@ button:hover {
   align-items: center;
   left: 0;
   right: 0;
-  margin: 0.5rem;
-  padding-bottom: 0.6rem;
+  margin: 1.5rem;  
   border-radius: 5px;
   background-color: var(--navbar-bg-color);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -216,6 +211,10 @@ div {
 .bg-colorful {
   background: url("images/bg-colorful.png") no-repeat center;
   background-size: cover;
+}
+
+.bg-transparent{
+  background-color: rgba(0, 0, 0, 0.25) !important;
 }
 
 #performance-trail,
@@ -300,7 +299,7 @@ div {
   display: none;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px) {  
   .navbar-toggle {
     display: none;
   }
@@ -323,5 +322,9 @@ div {
     list-style-type: none;
     max-height: max-content;
     background-color: transparent;
+  }
+  
+  #navbar-menu > ul > li:nth-child(6){
+    border-left: 2px solid #c1c1c1;
   }
 }

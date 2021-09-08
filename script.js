@@ -44,6 +44,20 @@
     stagger: 0.25,
   });
 
+  let navbarTrigger = document.querySelector("#navbar");
+
+  ScrollTrigger.create({
+    trigger: "#home",
+    onEnter: () => {
+      navbarTrigger.classList.add("bg-transparent");
+    },
+    onLeave: ()=>{
+      navbarTrigger.classList.remove("bg-transparent");
+    },
+    onEnterBack: () => {
+      navbarTrigger.classList.add("bg-transparent");
+    },
+  });
   // Home Animations
 
   ScrollTrigger.create({
