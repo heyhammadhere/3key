@@ -437,4 +437,9 @@
       $(".scalable").hide();
     }
   );
+
+  $("foreignObject#calculator-object span").on("click", function () {
+    $("foreignObject#calculator-object span").removeClass("skyblue");
+    $(this).addClass("skyblue");
+  });
 })();

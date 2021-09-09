@@ -37,6 +37,8 @@
           <li class="navbar-item"><a class="navbar-link" href="#d2bc031f-1026-4185-bc7a-ba2c732eec68">APPROACH</a></li>
           <li class="navbar-item"><a class="navbar-link" href="#46c7bf4b-8799-4f2f-9bcc-f610f54e904a">CONTACT US</a>
           </li>
+          <li class="navbar-item"><a class="navbar-link" href="javascript:void(0)">ENTER APP</a>
+          </li>
           <li class="navbar-item"><a class="navbar-link" href="javascript:void(0)">EN</a></li>
         </ul>
       </div>
@@ -270,27 +272,7 @@
             stroke-miterlimit: 10;
             stroke-width: 3px;
             filter: drop-shadow(5px 0 8px #0695c9);
-          " />
-      <line x1="661.5" y1="360.5" x2="236.5" y2="360.5" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-      <rect x="236.5" y="415.5" width="425" height="46" rx="5" ry="5" style="
-            fill: none;
-            stroke: #0695c9;
-            stroke-miterlimit: 10;
-            stroke-width: 3px;
-          " />
-      <text transform="translate(235.79 295.4)" style="
-            font-size: 14px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        FUND ALLOCATION ( USDT )
-      </text>
+          " />                  
       <text transform="translate(775 260)" style="
             font-size: 26px;
             fill: #fff;
@@ -322,31 +304,7 @@
             letter-spacing: 5px;
           ">
         ESTIMATED RETURNS
-      </text>
-      <text transform="translate(236.79 395.4)" style="
-            font-size: 14px;
-            fill: #fff;
-            font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-          ">
-        PREFERRED DURATION
-      </text>
-      <text transform="translate(235.79 480.4)" style="
-            font-size: 14px;
-            fill: #0fb2ee;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-          ">
-        *IN MONTHS
-      </text>
-      <text transform="translate(235.79 337.4)" style="
-            font-size: 26px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            letter-spacing: 5px;
-          ">
-        $10,000
-      </text>
+      </text>      
       <text transform="translate(250 200) rotate(0.31)" style="
             font-size: 36px;
             fill: #fff;
@@ -354,40 +312,7 @@
             font-weight: 700;
           ">
         CALCULATOR
-      </text>
-      <text transform="translate(277.26 450.26)" style="
-            font-size: 28px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            letter-spacing: 5px;
-          ">
-        3
-      </text>
-      <text transform="translate(385.26 450.26)" style="
-            font-size: 28px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            letter-spacing: 5px;
-          ">
-        6
-      </text>
-      <text transform="translate(490.27 450.26)" style="
-            font-size: 28px;
-            fill: #fff;
-            font-family: Arial-BoldMT, Arial;
-            letter-spacing: 5px;
-          ">
-        9
-      </text>
-      <text transform="translate(594.26 449.26)" style="
-            font-size: 28px;
-            fill: #0fb2ee;
-            font-family: Arial-BoldMT, Arial;
-            font-weight: 700;
-            letter-spacing: 5px;
-          ">
-        12
-      </text>
+      </text>      
       <text transform="translate(875 363)" style="
             font-size: 48px;
             fill: #2f7fc9;
@@ -412,23 +337,34 @@
           ">
         $3,525
       </text>
+      <g class="calculate-yield">
       <rect x="563.7" y="670.5" width="255" height="46" rx="25" ry="25" style="
             stroke: none;
             fill: url(#trail-light-02);
             stroke-miterlimit: 10;
             stroke-width: 3px;
-            border-radius: 4px;
-            cursor: pointer;
+            border-radius: 4px;            
           " />
       <text transform="translate(590 699.33)" style="
             font-size: 14px;
             fill: #fff;
             font-family: ArialMT, Arial;
-            letter-spacing: 5px;
-            cursor: pointer;
+            letter-spacing: 5px;            
           ">
         CALCULATE YIELD
-      </text>
+      </text></g>
+      <foreignObject id="calculator-object" x="225" y="275">
+        <label>FUND ALLOCATION ( USDT )</label>
+        <input type="text" name="" id="">
+        <label>PREFERRED DURATION</label>
+        <div>
+          <span>3</span>
+          <span>6</span>
+          <span>9</span>
+          <span class="skyblue">12</span>
+        </div>
+        <strong>*IN MONTHS</strong>        
+      </foreignObject>
     </svg>
   </div>
   <!-- Solutions Starts -->
@@ -2240,7 +2176,7 @@
       </text>
       <image width="500" transform="translate(800 150) scale(0.7)" xlink:href="images/diamond.png"
         style="isolation: isolate" />
-      <foreignObject x="225" y="280">
+      <foreignObject id="contact-object" x="225" y="280">
         <form action="javascript:void(0)">
           <label>YOUR NAME</label>
           <input type="text" name="" id="">

@@ -57,7 +57,7 @@ button:hover {
   background-color: var(--navbar-bg-color);
   left: 0;
   right: 0;  
-  padding: 10px 0px;
+  padding: 7.5px 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: all 1s ease;
 }
@@ -70,7 +70,8 @@ button:hover {
 }
 
 .navbar-item {
-  padding: 0.75em 2.5em;
+  padding: 0.5em 1em;
+  margin: 0.15em 0.5em;
   width: 75%;
 }
 
@@ -99,7 +100,15 @@ button:hover {
 }
 
 #navbar-menu > ul > li:nth-child(6){
-  border-left: 2px solid none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid #906;
+  border-radius: 4px;
+}
+
+#navbar-menu > ul > li:nth-child(7){
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 4px;
 }
 
 .navbar-link:focus,
@@ -183,7 +192,8 @@ button:hover {
   align-items: center;
   left: 0;
   right: 0;
-  margin: 1.5rem;  
+  margin: 0.75em;  
+  padding-bottom: 0.5em;
   border-radius: 5px;
   background-color: var(--navbar-bg-color);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -215,6 +225,10 @@ div {
 
 .bg-transparent{
   background-color: rgba(0, 0, 0, 0.25) !important;
+}
+
+.skyblue{
+  color: #0695c9;
 }
 
 #performance-trail,
@@ -299,22 +313,71 @@ div {
   display: none;
 }
 
-foreignObject{  
+foreignObject#calculator-object{    
+  width: 450px;
+  height: 250px;
+  padding-left: 15px;
+}
+
+foreignObject#calculator-object *{
+  display: block;
+  margin: 5px 0px;
+}
+
+foreignObject#calculator-object label{
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+
+foreignObject#calculator-object input{
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: transparent;
+  border-bottom: 3px solid #0695c9;
+  width: 400px;
+  height: 50px;  
+  font-size: 28px;
+}
+
+foreignObject#calculator-object div{
+  display: inline-block;
+  border: 3px solid #0695c9;
+  border-radius: 4px;
+}
+
+foreignObject#calculator-object span{
+  display: inline-block;  
+  padding: 10px 38.5px;
+  font-size: 28px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+foreignObject#calculator-object strong{
+  color: #0695c9;
+}
+
+.calculate-yield{
+  cursor: pointer;
+}
+
+foreignObject#contact-object{  
   width: 450px;  
   height: 300px;
   padding-left: 15px;
 }
 
-foreignObject *{
+foreignObject#contact-object *{
   display: block;
 }
 
-foreignObject label{
+foreignObject#contact-object label{
   font-size: 10px;
   letter-spacing: 2.5px;
 }
 
-foreignObject input{
+foreignObject#contact-object input{
   border: none;
   outline: none;
   color: #fff;
@@ -326,7 +389,7 @@ foreignObject input{
   font-size: 18px;
 }
 
-foreignObject button,foreignObject button:focus,foreignObject button:active{
+foreignObject#contact-object button,foreignObject#contact-object button:focus,foreignObject#contact-object button:active{
   outline: none;
   color: #fff;
   background-image: linear-gradient(#0695c9, rgb(97, 31, 202), #906);
@@ -361,9 +424,5 @@ foreignObject button,foreignObject button:focus,foreignObject button:active{
     list-style-type: none;
     max-height: max-content;
     background-color: transparent;
-  }
-  
-  #navbar-menu > ul > li:nth-child(6){
-    border-left: 2px solid #c1c1c1;
   }
 }
