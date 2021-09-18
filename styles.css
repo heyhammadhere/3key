@@ -481,3 +481,15 @@ foreignObject#contact-object button:active {
   color: #0695c9;
   filter: drop-shadow(0px 0px 15px #0695c9);
 }
+
+#solutions-01 foreignObject{
+  width: 75px;
+  height: 25px;  
+}
+
+#solutions-01 a{
+  text-decoration: none;
+  font-family: postermana, sans-serif !important;
+  font-size: 18px;
+  color: #fff;
+}
