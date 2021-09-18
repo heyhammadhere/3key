@@ -437,26 +437,51 @@ foreignObject#contact-object button:active {
   stroke-miterlimit: 10;
 }
 
+.stroke-purple {
+  fill: none;
+  stroke: #d32ed8;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.stroke-blueviolet {
+  fill: none;
+  stroke: blueviolet;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}
+
+.stroke-blue {
+  fill: none;
+  stroke: #064764;
+  stroke-width: 1;
+  stroke-miterlimit: 10;
+}
+
 .stroke-gradient {
   fill: none;
-  stroke: url(#g-2);
+  stroke: url(#g-1);
   stroke-width: 3;
   stroke-miterlimit: 10;
 }
 
 .shadow-skyblue {
-  filter: drop-shadow(0px 0px 25px #0695c9);
+  filter: drop-shadow(0px 0px 20px #0695c9);
+}
+
+.shadow-purple {
+  filter: drop-shadow(0px 0px 20px #906);
 }
 
 .key {
-  stroke: url(#g-1);
+  stroke: url(#g-2);
   stroke-width: 3;
   stroke-miterlimit: 10;
 }
 
 #performance-trail,
 #solutions-trail,
-#approach-trail {  
+#approach-trail {
   stroke-dasharray: 2000;
   stroke-dashoffset: 2000;
   transition: all 0.65s ease-in-out;
@@ -482,14 +507,57 @@ foreignObject#contact-object button:active {
   filter: drop-shadow(0px 0px 15px #0695c9);
 }
 
-#solutions-01 foreignObject{
+#solutions-01 foreignObject {
   width: 75px;
-  height: 25px;  
+  height: 25px;
 }
 
-#solutions-01 a{
+#solutions-01 a {
   text-decoration: none;
   font-family: postermana, sans-serif !important;
   font-size: 18px;
   color: #fff;
+}
+
+#solutions-02 foreignObject {
+  width: 550px;
+  height: 460px;
+  font-size: 18px;
+}
+
+#solutions-03 foreignObject.key-title {
+  width: 560px;
+  height: 75px;
+  font-family: postermana, sans-serif !important;
+  letter-spacing: 5px;
+}
+
+#solutions-03 foreignObject.key-title span {
+  font-size: 64px;
+  color: #7044d8;
+  padding-right: 10px;
+}
+
+#solutions-03 foreignObject.key-definition {
+  width: 350px;
+  height: 110px;
+  font-size: 18px;
+}
+
+#solutions-04 foreignObject {
+  width: 650px;
+  height: 230px;
+  text-align: center;
+}
+
+#solutions-04 foreignObject h2 {
+  font-family: postermana, sans-serif !important;
+  font-size: 38px;
+  line-height: 40px;
+  color: #7044d8;
+}
+
+#solutions-04 foreignObject p {
+  font-size: 18px;
+  padding-top: 10px;
 }
