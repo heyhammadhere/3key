@@ -1,4 +1,6 @@
 (() => {
+  calculator();
+
   const navbar = document.getElementById("navbar");
   const navbarToggle = navbar.querySelector(".navbar-toggle");
 
@@ -29,6 +31,10 @@
 
   navbarMenu.addEventListener("click", closeMobileNavbar);
 
+  const navLinks = document.querySelectorAll(".navbar-link").forEach((link) => {
+    link.addEventListener("click", closeMobileNavbar);
+  });
+
   // Nav Animations
 
   gsap.from("#navbar", {
@@ -51,7 +57,7 @@
     onEnter: () => {
       navbarTrigger.classList.add("bg-transparent");
     },
-    onLeave: ()=>{
+    onLeave: () => {
       navbarTrigger.classList.remove("bg-transparent");
     },
     onEnterBack: () => {
@@ -91,58 +97,38 @@
     },
   });
 
-  document
-    .getElementById("home-perf")
-    .addEventListener("mouseenter", anim_performance);
-  document
-    .getElementById("home-perf")
-    .addEventListener("mouseleave", anim_performance_stop);
+  $("#performance-link").hover(
+    function () {
+      $("#performance-trail").css("stroke-dashoffset", 0);
+      $("#performance-circle").fadeIn(250);
+    },
+    function () {
+      $("#performance-trail").css("stroke-dashoffset", 2000);
+      $("#performance-circle").fadeOut(250);
+    }
+  );
 
-  async function anim_performance() {
-    document.getElementById("performance-trail").classList.add("draw");
-    document
-      .getElementById("performance-circle")
-      .classList.remove("display-none");
-  }
+  $("#solutions-link").hover(
+    function () {
+      $("#solutions-trail").css("stroke-dashoffset", 0);
+      $("#solutions-circle").fadeIn(250);
+    },
+    function () {
+      $("#solutions-trail").css("stroke-dashoffset", 2000);
+      $("#solutions-circle").fadeOut(250);
+    }
+  );
 
-  async function anim_performance_stop() {
-    document.getElementById("performance-trail").classList.remove("draw");
-    document.getElementById("performance-circle").classList.add("display-none");
-  }
-
-  document
-    .getElementById("home-sol")
-    .addEventListener("mouseenter", anim_solution);
-  document
-    .getElementById("home-sol")
-    .addEventListener("mouseleave", anim_solution_stop);
-
-  async function anim_solution() {
-    document.getElementById("solution-trail").classList.add("draw");
-    document.getElementById("solution-circle").classList.remove("display-none");
-  }
-
-  async function anim_solution_stop() {
-    document.getElementById("solution-trail").classList.remove("draw");
-    document.getElementById("solution-circle").classList.add("display-none");
-  }
-
-  document
-    .getElementById("home-appr")
-    .addEventListener("mouseenter", anim_approach);
-  document
-    .getElementById("home-appr")
-    .addEventListener("mouseleave", anim_approach_stop);
-
-  async function anim_approach() {
-    document.getElementById("approach-trail").classList.add("draw");
-    document.getElementById("approach-circle").classList.remove("display-none");
-  }
-
-  async function anim_approach_stop() {
-    document.getElementById("approach-trail").classList.remove("draw");
-    document.getElementById("approach-circle").classList.add("display-none");
-  }
+  $("#approach-link").hover(
+    function () {
+      $("#approach-trail").css("stroke-dashoffset", 0);
+      $("#approach-circle").fadeIn(250);
+    },
+    function () {
+      $("#approach-trail").css("stroke-dashoffset", 2000);
+      $("#approach-circle").fadeOut(250);
+    }
+  );
 
   // Solutions Animations
 
@@ -442,4 +428,89 @@
     $("foreignObject#calculator-object span").removeClass("skyblue");
     $(this).addClass("skyblue");
   });
+
+  $("#calc_amount").on("keypress", function () {
+    return isNumber(event, this, 8);
+  });
 })();
+
+function calculator() {
+  var amount = $("#calc_amount").val();
+  var duration = Number($(".skyblue").text());
+
+  $.ajax({
+    //url : 'http://localhost/dev/Project3key/Calculator/',
+    url: "https://app.3key.io/Calculator/",
+    type: "post",
+    data: { amount: amount, duration: duration },
+    dataType: "json",
+    success: function (response) {
+      $("#portfolio_value").text("$ " + response.portfolio_value);
+      var left = 960 - Number(response.portfolio_value.length) * 10;
+      $("#portfolio_value").attr("transform", "translate(" + left + ",363)");
+
+      $("#estim_yield").text("$ " + response.estimated_yield);
+      var left = 960 - Number(response.estimated_yield.length) * 10;
+      $("#estim_yield").attr("transform", "translate(" + left + ",468.5)");
+
+      $("#estim_returns").text("$ " + response.estimated_returns);
+      var left = 960 - Number(response.estimated_returns.length) * 10;
+      $("#estim_returns").attr("transform", "translate(" + left + ",574)");
+
+      $("#return_apr").text(response.past_days_apr + "%");
+      $("#return_apy").text(response.past_days_apy + "%");
+    },
+  });
+}
+
+function isNumber(evt, element, decimal_limit) {
+  var charCode = evt.which ? evt.which : event.keyCode;
+  if (
+    (charCode != 46 || $(element).val().indexOf(".") != -1) && // “.” CHECK DOT, AND ONLY ONE.
+    (charCode < 48 || charCode > 57)
+  )
+    return false;
+
+  var character = String.fromCharCode(evt.keyCode);
+  var newValue = element.value + character;
+
+  if (
+    isNaN(newValue) ||
+    hasDecimalPlace(newValue, parseInt(decimal_limit) + 1)
+  ) {
+    evt.preventDefault();
+    return false;
+  }
+
+  return true;
+}
+function hasDecimalPlace(value, x) {
+  var pointIndex = value.indexOf(".");
+  return pointIndex >= 0 && pointIndex < value.length - x;
+}
+
+function contactus() {
+  $("#contact_btn").prop("disable", true);
+
+  var name = $("#contact_name").val();
+  var mail = $("#contact_mail").val();
+  var msg = $("#contact_msg").val();
+
+  $.ajax({
+    url: "https://app.3key.io/Calculator/Contact/",
+    type: "post",
+    data: { name: name, mail: mail, msg: msg },
+    dataType: "json",
+    success: function (response) {
+      $("#contact_error").text(response["message"]);
+      $("#contact_btn").prop("disable", false);
+
+      if (response["success"] == true) {
+        setTimeout(function () {
+          $("foreignObject#contact-object input").val("");
+          $("#contact_error").text("");
+        }, 2000);
+      }
+    },
+  });
+}

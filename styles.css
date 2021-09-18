@@ -1,5 +1,11 @@
-:root {  
-  --navbar-bg-color: #0E1323;
+@font-face {
+  font-family: postermana;
+  src: url(fonts/postermana_bold.ttf) format("truetype");
+  font-weight: bold;
+}
+
+:root {
+  --navbar-bg-color: #0e1323;
   --navbar-text-color: hsl(0, 0%, 85%);
   --navbar-text-color-focus: white;
   --navbar-bg-contrast: hsl(0, 0%, 25%);
@@ -56,7 +62,7 @@ button:hover {
   height: var(--navbar-height);
   background-color: var(--navbar-bg-color);
   left: 0;
-  right: 0;  
+  right: 0;
   padding: 7.5px 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   transition: all 1s ease;
@@ -83,7 +89,7 @@ button:hover {
   display: flex;
   font-size: 11px;
   font-weight: 400;
-  align-items: center;  
+  align-items: center;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
@@ -94,18 +100,18 @@ button:hover {
 
 .navbar-link {
   justify-content: center;
-  width: 100%;  
+  width: 100%;
   border-radius: 5px;
   white-space: nowrap;
 }
 
-#navbar-menu > ul > li:nth-child(6){
+#navbar-menu > ul > li:nth-child(6) {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid #906;
   border-radius: 4px;
 }
 
-#navbar-menu > ul > li:nth-child(7){
+#navbar-menu > ul > li:nth-child(7) {
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.45);
   border-radius: 4px;
@@ -173,7 +179,7 @@ button:hover {
   opacity: 0;
   visibility: hidden;
   left: 0;
-  right: 0;  
+  right: 0;
 }
 
 #navbar.opened #navbar-menu {
@@ -192,7 +198,7 @@ button:hover {
   align-items: center;
   left: 0;
   right: 0;
-  margin: 0.75em;  
+  margin: 0.75em;
   padding-bottom: 0.5em;
   border-radius: 5px;
   background-color: var(--navbar-bg-color);
@@ -223,22 +229,12 @@ div {
   background-size: cover;
 }
 
-.bg-transparent{
+.bg-transparent {
   background-color: rgba(0, 0, 0, 0.25) !important;
 }
 
-.skyblue{
+.skyblue {
   color: #0695c9;
-}
-
-#performance-trail,
-#solution-trail,
-#approach-trail {
-  stroke-width: 3px;
-  stroke: url(#trail-light);
-  stroke-opacity: 1;
-  fill-opacity: 0;
-  filter: drop-shadow(0 0 40px #0695c9);
 }
 
 #home-perf,
@@ -246,7 +242,7 @@ div {
 #home-appr {
   font-size: 36px;
   fill: #0695c9;
-  font-family: Arial-BoldMT, Arial;
+  font-family: postermana, sans-serif !important;
   font-weight: 700;
   filter: drop-shadow(0 0 1.5rem #0695c9);
 }
@@ -257,10 +253,6 @@ div {
   stroke-miterlimit: 10;
   stroke-width: 2px;
   filter: drop-shadow(0 0 1.5rem #0695c9);
-}
-
-.circle-indicator {
-  filter: drop-shadow(0 0 40px #0695c9);
 }
 
 .glowing {
@@ -313,71 +305,71 @@ div {
   display: none;
 }
 
-foreignObject#calculator-object{    
+foreignObject#calculator-object {
   width: 450px;
   height: 250px;
   padding-left: 15px;
 }
 
-foreignObject#calculator-object *{
+foreignObject#calculator-object * {
   display: block;
   margin: 5px 0px;
 }
 
-foreignObject#calculator-object label{
+foreignObject#calculator-object label {
   font-size: 14px;
   letter-spacing: 5px;
 }
 
-foreignObject#calculator-object input{
+foreignObject#calculator-object input {
   border: none;
   outline: none;
   color: #fff;
   background-color: transparent;
   border-bottom: 3px solid #0695c9;
   width: 400px;
-  height: 50px;  
+  height: 50px;
   font-size: 28px;
 }
 
-foreignObject#calculator-object div{
+foreignObject#calculator-object div {
   display: inline-block;
   border: 3px solid #0695c9;
   border-radius: 4px;
 }
 
-foreignObject#calculator-object span{
-  display: inline-block;  
-  padding: 10px 38.5px;
+foreignObject#calculator-object span {
+  display: inline-block;
+  padding: 10px 25px;
   font-size: 28px;
   font-weight: 500;
   cursor: pointer;
 }
 
-foreignObject#calculator-object strong{
+foreignObject#calculator-object strong {
   color: #0695c9;
 }
 
-.calculate-yield{
+.calculate-yield {
   cursor: pointer;
 }
 
-foreignObject#contact-object{  
-  width: 450px;  
+foreignObject#contact-object {
+  width: 450px;
   height: 300px;
   padding-left: 15px;
 }
 
-foreignObject#contact-object *{
+foreignObject#contact-object * {
   display: block;
 }
 
-foreignObject#contact-object label{
+foreignObject#contact-object label {
   font-size: 10px;
   letter-spacing: 2.5px;
 }
 
-foreignObject#contact-object input{
+foreignObject#contact-object input {
   border: none;
   outline: none;
   color: #fff;
@@ -389,19 +381,21 @@ foreignObject#contact-object input{
   font-size: 18px;
 }
 
-foreignObject#contact-object button,foreignObject#contact-object button:focus,foreignObject#contact-object button:active{
+foreignObject#contact-object button,
+foreignObject#contact-object button:focus,
+foreignObject#contact-object button:active {
   outline: none;
   color: #fff;
   background-image: linear-gradient(#0695c9, rgb(97, 31, 202), #906);
   width: 400px;
   height: 50px;
-  margin: 20px 0px;  
+  margin: 20px 0px;
   border: none;
   border-radius: 25px;
   cursor: pointer;
 }
 
-@media screen and (min-width: 700px) {  
+@media screen and (min-width: 700px) {
   .navbar-toggle {
     display: none;
   }
@@ -425,4 +419,65 @@ foreignObject#contact-object button,foreignObject#contact-object button:focus,fo
     max-height: max-content;
     background-color: transparent;
   }
+}
+
+/* Custom Classes */
+
+.stroke-dark {
+  fill: none;
+  stroke: #000000;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.stroke-skyblue {
+  fill: none;
+  stroke: #0695c9;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.stroke-gradient {
+  fill: none;
+  stroke: url(#g-2);
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+.shadow-skyblue {
+  filter: drop-shadow(0px 0px 25px #0695c9);
+}
+
+.key {
+  stroke: url(#g-1);
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
+#performance-trail,
+#solutions-trail,
+#approach-trail {  
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  transition: all 0.65s ease-in-out;
+}
+
+#performance-circle,
+#solutions-circle,
+#approach-circle {
+  display: none;
+}
+
+#home foreignObject {
+  width: 350px;
+  height: 100px;
+  padding: 25px;
+}
+
+#home a {
+  font-family: postermana, sans-serif !important;
+  font-size: 36px;
+  text-decoration: none;
+  color: #0695c9;
+  filter: drop-shadow(0px 0px 15px #0695c9);
 }
