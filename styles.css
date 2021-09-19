@@ -354,9 +354,7 @@ foreignObject#calculator-object strong {
   cursor: pointer;
 }
 
-foreignObject#contact-object {
-  width: 450px;
-  height: 300px;
+foreignObject#contact-object {  
   padding-left: 15px;
 }
 
