@@ -222,7 +222,7 @@ div {
 .bg-dark {
   background: url("images/bg-dark.png") no-repeat center;
   background-size: cover;
-  box-shadow: 0 0 64px 48px black inset;
+  box-shadow: 0 0 64px 48px black inset;    
 }
 
 .bg-colorful {
