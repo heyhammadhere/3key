@@ -63,9 +63,9 @@ button:hover {
   background-color: var(--navbar-bg-color);
   left: 0;
   right: 0;
-  padding: 7.5px 0px;
+  padding: 7.5px 0px;  
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  transition: all 1s ease;
+  transition: all 1s ease;  
 }
 
 .navbar-container {
@@ -222,11 +222,13 @@ div {
 .bg-dark {
   background: url("images/bg-dark.png") no-repeat center;
   background-size: cover;
+  box-shadow: 0 0 64px 48px black inset;
 }
 
 .bg-colorful {
   background: url("images/bg-colorful.png") no-repeat center;
   background-size: cover;
+  box-shadow: 0 0 64px 48px black inset;
 }
 
 .bg-transparent {
