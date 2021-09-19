@@ -305,9 +305,7 @@ div {
   display: none;
 }
 
-foreignObject#calculator-object {
-  width: 450px;
-  height: 250px;
+foreignObject#calculator-object {  
   padding-left: 15px;
 }
 
@@ -498,9 +496,7 @@ foreignObject#contact-object button:active {
   display: none;
 }
 
-#home foreignObject {
-  width: 350px;
-  height: 100px;
+#home foreignObject {  
   padding: 25px;
 }
 
@@ -512,11 +508,6 @@ foreignObject#contact-object button:active {
   filter: drop-shadow(0px 0px 15px #0695c9);
 }
 
-#solutions-01 foreignObject {
-  width: 75px;
-  height: 25px;
-}
-
 #solutions-01 a {
   text-decoration: none;
   font-family: postermana, sans-serif !important;
@@ -524,9 +515,7 @@ foreignObject#contact-object button:active {
   color: #fff;
 }
 
-#solutions-02 foreignObject.lyra-title {  
-  width: 250px;
-  height: 75px;
+#solutions-02 foreignObject.lyra-title {    
   font-family: postermana, sans-serif !important;
   letter-spacing: 5px;
 }
@@ -537,15 +526,11 @@ foreignObject#contact-object button:active {
   padding-right: 10px;
 }
 
-#solutions-02 foreignObject.lyra-definition {
-  width: 550px;
-  height: 460px;
+#solutions-02 foreignObject.lyra-definition {  
   font-size: 18px;
 }
 
-#solutions-03 foreignObject.key-title {
-  width: 560px;
-  height: 75px;
+#solutions-03 foreignObject.key-title {  
   font-family: postermana, sans-serif !important;
   letter-spacing: 5px;
 }
@@ -556,15 +541,11 @@ foreignObject#contact-object button:active {
   padding-right: 10px;
 }
 
-#solutions-03 foreignObject.key-definition {
-  width: 350px;
-  height: 110px;
+#solutions-03 foreignObject.key-definition {  
   font-size: 18px;
 }
 
-#solutions-04 foreignObject {
-  width: 650px;
-  height: 230px;
+#solutions-04 foreignObject {  
   text-align: center;
 }
 
