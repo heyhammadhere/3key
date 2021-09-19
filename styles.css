@@ -430,6 +430,13 @@ foreignObject#contact-object button:active {
   stroke-miterlimit: 10;
 }
 
+.stroke-light {
+  fill: none;
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+}
+
 .stroke-skyblue {
   fill: none;
   stroke: #0695c9;
@@ -519,7 +526,20 @@ foreignObject#contact-object button:active {
   color: #fff;
 }
 
-#solutions-02 foreignObject {
+#solutions-02 foreignObject.lyra-title {  
+  width: 250px;
+  height: 75px;
+  font-family: postermana, sans-serif !important;
+  letter-spacing: 5px;
+}
+
+#solutions-02 foreignObject.lyra-title span {
+  font-size: 64px;
+  color: #7044d8;
+  padding-right: 10px;
+}
+
+#solutions-02 foreignObject.lyra-definition {
   width: 550px;
   height: 460px;
   font-size: 18px;
