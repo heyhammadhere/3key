@@ -63,9 +63,9 @@ button:hover {
   background-color: var(--navbar-bg-color);
   left: 0;
   right: 0;
-  padding: 7.5px 0px;  
+  padding: 7.5px 0px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-  transition: all 1s ease;  
+  transition: all 1s ease;
 }
 
 .navbar-container {
@@ -222,7 +222,7 @@ div {
 .bg-dark {
   background: url("images/bg-dark.png") no-repeat center;
   background-size: cover;
-  box-shadow: 0 0 64px 48px black inset;    
+  box-shadow: 0 0 64px 48px black inset;
 }
 
 .bg-colorful {
@@ -307,7 +307,7 @@ div {
   display: none;
 }
 
-foreignObject#calculator-object {  
+foreignObject#calculator-object {
   padding-left: 15px;
 }
 
@@ -354,7 +354,7 @@ foreignObject#calculator-object strong {
   cursor: pointer;
 }
 
-foreignObject#contact-object {  
+foreignObject#contact-object {
   padding-left: 15px;
 }
 
@@ -393,18 +393,25 @@ foreignObject#contact-object button:active {
   cursor: pointer;
 }
 
-@media screen and (max-width: 768px) {  
-  svg{
+@media screen and (max-width: 768px) {
+  svg {
     height: auto;
-  }  
-  .h-50{
-    width: auto;
-    height: 50vh;    
   }
-  .h-100{
-    width: auto;
+  #solutions-01 {
+    padding: 10vh 0vw;
+  }
+  #solutions-04 {
+    padding-bottom: 10vh;
+  }
+  #approach-01 {
+    padding-top: 10vh;
+  }
+  #contact {
+    padding-bottom: 10vh;
+  }
+  .h-100 {
     height: 100vh;
-  }  
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -498,7 +505,7 @@ foreignObject#contact-object button:active {
   stroke-miterlimit: 10;
 }
 
-.title{
+.title {
   font-size: 36px;
   font-weight: 700;
   letter-spacing: 25px;
@@ -518,7 +525,7 @@ foreignObject#contact-object button:active {
   display: none;
 }
 
-#home foreignObject {  
+#home foreignObject {
   padding: 25px;
 }
 
@@ -537,7 +544,7 @@ foreignObject#contact-object button:active {
   color: #fff;
 }
 
-#solutions-02 foreignObject.lyra-title {    
+#solutions-02 foreignObject.lyra-title {
   font-family: postermana, sans-serif !important;
   letter-spacing: 5px;
 }
@@ -548,11 +555,11 @@ foreignObject#contact-object button:active {
   padding-right: 10px;
 }
 
-#solutions-02 foreignObject.lyra-definition {  
+#solutions-02 foreignObject.lyra-definition {
   font-size: 18px;
 }
 
-#solutions-03 foreignObject.key-title {  
+#solutions-03 foreignObject.key-title {
   font-family: postermana, sans-serif !important;
   letter-spacing: 5px;
 }
@@ -563,14 +570,14 @@ foreignObject#contact-object button:active {
   padding-right: 10px;
 }
 
-#solutions-03 foreignObject.key-definition {  
+#solutions-03 foreignObject.key-definition {
   font-size: 18px;
   background-color: rgba(255, 255, 255, 0.075);
   padding: 10px 25px;
   border-radius: 4px;
 }
 
-#solutions-04 foreignObject {  
+#solutions-04 foreignObject {
   text-align: center;
 }
 
