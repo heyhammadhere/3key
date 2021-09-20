@@ -484,6 +484,12 @@ foreignObject#contact-object button:active {
   stroke-miterlimit: 10;
 }
 
+.title{
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 25px;
+}
+
 #performance-trail,
 #solutions-trail,
 #approach-trail {
@@ -545,6 +551,9 @@ foreignObject#contact-object button:active {
 
 #solutions-03 foreignObject.key-definition {  
   font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.075);
+  padding: 10px 25px;
+  border-radius: 4px;
 }
 
 #solutions-04 foreignObject {  
