@@ -511,6 +511,13 @@ foreignObject#contact-object button:active {
   letter-spacing: 25px;
 }
 
+.home-title{
+  font-family: postermana, sans-serif !important;
+  font-size: 36px;
+  font-weight: 700;
+  fill: #0695c9;
+}
+
 #performance-trail,
 #solutions-trail,
 #approach-trail {
@@ -525,16 +532,8 @@ foreignObject#contact-object button:active {
   display: none;
 }
 
-#home foreignObject {
-  padding: 25px;
-}
-
-#home a {
-  font-family: postermana, sans-serif !important;
-  font-size: 36px;
-  text-decoration: none;
-  color: #0695c9;
-  filter: drop-shadow(0px 0px 15px #0695c9);
+#home a text{
+  transition: 0.5s ease;
 }
 
 #solutions-01 a {

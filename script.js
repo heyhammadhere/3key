@@ -64,69 +64,65 @@
       navbarTrigger.classList.add("bg-transparent");
     },
   });
+
   // Home Animations
 
   ScrollTrigger.create({
     trigger: "#home",
     onEnter: () => {
       anime({
-        targets: "#home svg path.sol,#home svg path.appr,#home svg path.perf",
+        targets: "#home svg path",
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1500,
-      });
-      gsap.from("#home-sol,#home-appr,#home-perf", {
-        delay: 0.5,
-        opacity: 0,
-        stagger: 0.5,
       });
     },
     onEnterBack: () => {
       anime({
-        targets: "#home svg path.sol,#home svg path.appr,#home svg path.perf",
+        targets: "#home svg path",
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1500,
-      });
-      gsap.from("#home-sol,#home-appr,#home-perf", {
-        delay: 0.5,
-        duration: 1,
-        opacity: 0,
-        stagger: 0.5,
-      });
+      });      
     },
   });
 
   $("#performance-link").hover(
     function () {
       $("#performance-trail").css("stroke-dashoffset", 0);
-      $("#performance-circle").fadeIn(250);
+      $("#performance-circle").fadeIn(250);  
+      $(this).addClass("shadow-skyblue");
     },
     function () {
       $("#performance-trail").css("stroke-dashoffset", 2000);
-      $("#performance-circle").fadeOut(250);
+      $("#performance-circle").fadeOut(250); 
+      $(this).removeClass("shadow-skyblue");     
     }
   );
 
   $("#solutions-link").hover(
     function () {
       $("#solutions-trail").css("stroke-dashoffset", 0);
-      $("#solutions-circle").fadeIn(250);
+      $("#solutions-circle").fadeIn(250);      
+      $(this).addClass("shadow-skyblue");
     },
     function () {
       $("#solutions-trail").css("stroke-dashoffset", 2000);
-      $("#solutions-circle").fadeOut(250);
+      $("#solutions-circle").fadeOut(250);     
+      $(this).removeClass("shadow-skyblue"); 
     }
   );
 
   $("#approach-link").hover(
     function () {
       $("#approach-trail").css("stroke-dashoffset", 0);
-      $("#approach-circle").fadeIn(250);
+      $("#approach-circle").fadeIn(250);      
+      $(this).addClass("shadow-skyblue");
     },
     function () {
       $("#approach-trail").css("stroke-dashoffset", 2000);
-      $("#approach-circle").fadeOut(250);
+      $("#approach-circle").fadeOut(250);      
+      $(this).removeClass("shadow-skyblue");
     }
   );
 
@@ -163,11 +159,7 @@
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1500,
-      });
-      gsap.from("#lyra-text", {
-        duration: 1,
-        x: "200%",
-      });
+      });      
     },
     onEnterBack: () => {
       anime({
@@ -176,10 +168,6 @@
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1500,
-      });
-      gsap.from("#lyra-text", {
-        duration: 1,
-        x: "200%",
       });
     },
   });
@@ -193,12 +181,7 @@
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1000,
-      });
-      gsap.from(".key-text", {
-        duration: 1,
-        x: "500%",
-        stagger: 0.5,
-      });
+      });      
     },
     onEnterBack: () => {
       anime({
@@ -207,11 +190,7 @@
         strokeDashoffset: [anime.setDashoffset, 0],
         easing: "easeInOutQuad",
         duration: 1000,
-      });
-      gsap.from(".key-text", {
-        duration: 1,
-        x: "500%",
-      });
+      });      
     },
   });
 
@@ -438,8 +417,7 @@ function calculator() {
   var amount = $("#calc_amount").val();
   var duration = Number($(".skyblue").text());
 
-  $.ajax({
-    //url : 'http://localhost/dev/Project3key/Calculator/',
+  $.ajax({    
     url: "https://app.3key.io/Calculator/",
     type: "post",
     data: { amount: amount, duration: duration },
