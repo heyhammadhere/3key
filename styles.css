@@ -393,7 +393,29 @@ foreignObject#contact-object button:active {
   cursor: pointer;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 768px) {  
+  svg{
+    height: auto;
+  }  
+  .h-50{
+    width: auto;
+    height: 50vh;    
+  }
+  .h-100{
+    width: auto;
+    height: 100vh;
+  }
+  .top{
+    justify-content: start;
+    /* align-items: flex-start; */
+  }
+  .bottom{
+    justify-content: end;
+    /* align-items: flex-end; */
+  }
+}
+
+@media screen and (min-width: 768px) {
   .navbar-toggle {
     display: none;
   }
